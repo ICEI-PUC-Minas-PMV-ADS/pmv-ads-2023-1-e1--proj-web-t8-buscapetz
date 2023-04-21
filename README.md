@@ -1,23 +1,27 @@
-# TÍTULO DO PROJETO
+# Busca Pets
 
-`CURSO`
+`Tecnólogo em Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`projeto de Desenvolvimento de Aplicação de Web-Front-End`
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+~ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido. ~
+Sistema de divulgação de animais perdidos e já encontrados.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Raia Alves da Silva
+* Filipe Lopes Gervasio
+* Ian Ruiz Lopes de Vasconcellos
+* Letícia Maria Sampaio Firmino
+* Maria de Lourdes Monteiro da Silva
+* Raquel Nonato Silva
+
 
 ## Orientador
 
-* Nome completo do professor 1
+* Marco Rodrigo Costa
 
 ## Instruções de utilização
 
@@ -37,6 +41,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="docs/09-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
 <li><a href="docs/10-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
 <li><a href="docs/11-Referências.md"> Referências</a></li>
+<li><a href="https://docs.google.com/document/d/1XBc6Ri8cBMn1FHNHYje0O8PNrpC9fTXQ/edit?pli=1"> Documento de referência</a></li>
 </ol>
 
 # Hospedagem
