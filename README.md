@@ -6,7 +6,7 @@
 
 `SEMESTRE`
 
-~ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido. ~
+~~Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.~~
 Sistema de divulgação de animais perdidos e já encontrados.
 
 ## Integrantes
