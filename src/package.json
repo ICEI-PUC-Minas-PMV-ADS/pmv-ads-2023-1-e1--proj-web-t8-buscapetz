@@ -1,7 +1,7 @@
 {
-  "name": "material-kit",
-  "version": "3.0.4",
-  "description": "Freebie UI Kit for Bootstrap 5",
+  "name": "soft-ui-design-system",
+  "version": "1.0.9",
+  "description": "Freebie Design System for Bootstrap 5",
   "main": "index.html",
   "directories": {
     "example": "root"
@@ -14,13 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/material-kit.git"
+    "url": "git+https://github.com/creativetimofficial/soft-ui-design-system.git"
   },
   "keywords": [
-    "material kit 2",
+    "soft ui design system",
     "bootstrap 5",
     "design system",
-    "ui kit",
     "creative tim",
     "html kit",
     "html css kit",
@@ -35,7 +34,7 @@
   "author": "Creative Tim <hello@creative-tim.com> (https://www.creative-tim.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/material-kit/issues"
+    "url": "https://github.com/creativetimofficial/soft-ui-design-system/issues"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
@@ -47,5 +46,5 @@
     "gulp-open": "^3.0.1",
     "sass": "^1.49.9"
   },
-  "homepage": "https://creative-tim.com/product/material-kit"
+  "homepage": "http://creative-tim.com/product/soft-ui-design-system"
 }
