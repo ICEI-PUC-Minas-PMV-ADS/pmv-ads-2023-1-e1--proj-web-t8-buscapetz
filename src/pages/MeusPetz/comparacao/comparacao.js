@@ -1,1 +1,1 @@
-alert ("COMPARAÇÃO")
+// alert ("COMPARAÇÃO")
