@@ -13,33 +13,37 @@
   <meta name="robots" content="index, follow"/>
   
   <title>Tela de login pronta HTML CSS</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./style.css">
   <link rel="shortcut icon" href="https://www.loopnerd.com.br/wp-content/themes/loopnerd/img/favicon.png"/>
 
 </head>
 <body>
 
 
-<div class="wrapper fadeInDown">
+  <div class="wrapper fadeInDown">
   
-  <div class="content-login">
+    <div class="content-login">
+  
+        <h2 class="active"> Login </h2>
+  
+        <form class="box-login" method="post" action="../MeusPetz/MeusPetz.html">
+          <input type="email" id="email" class="campo" name="email" placeholder="E-mail">
+          <input type="text" id="password" class="campo" name="senha" placeholder="Senha">
+          <input type="submit" class="botao" value="Entrar">
+        </form>
+  
+  
+        <div class="box-lembrar-senha">  
+          <a class="link" href="../usuario/usuario.html">Redefinir senha</a>
+        </div>
 
-      <h2 class="active"> Login </h2>
-
-      <form class="box-login" method="post" action="#">
-        <input type="email" id="email" class="campo" name="email" placeholder="E-mail">
-        <input type="text" id="password" class="campo" name="senha" placeholder="Senha">
-        <input type="submit" href="../usuario/usuario.html" class="botao" value="Entrar">
-      </form>
-
-
-      <div class="box-lembrar-senha">  
-        <a class="link" href="#">Redefinir senha</a>
-      </div>
-
-  </div><!--Form Content-->
-
-</div><!--wrapper-->
+        <div class="box-novo-cadastro">  
+          <a class="link" href="#">Novo Cadastro</a>
+        </div>
+  
+    </div>
+  
+  </div>
 
   
 </body>
