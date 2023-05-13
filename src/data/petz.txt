@@ -1,0 +1,70 @@
+{
+    "petz":{
+        "0":{
+            "id":1,
+            "name":"Catito",
+            "tipo":"Gato",
+            "situacao":"Perdido",
+            "caracteristicas":[
+                "Sem Raça definida",
+                "Porte pequeno",
+                "Dois anos",
+                "Olho azul e verde",
+                "Possui chip",
+                "Cadastro",
+                "Dócio com humanos",
+                "Macho"
+            ],
+            "images":{
+                "0":"catito_1.jpg",
+                "1":"catito_2.jpg",
+                "2":"catito_3.jpg"
+            }
+        },
+        "1":{
+            "id":2,
+            "name":"",
+            "tipo":"",
+            "situacao":"",
+            "caracteristicas":[
+                "",
+                ""
+            ],
+            "images":{
+                "0":"",
+                "1":"",
+                "2":""
+            }
+        },
+        "2":{
+            "id":3,
+            "name":"",
+            "tipo":"",
+            "situacao":"",
+            "caracteristicas":[
+                "",
+                ""
+            ],
+            "images":{
+                "0":"",
+                "1":"",
+                "2":""
+            }
+        },
+        "3":{
+            "id":4,
+            "name":"",
+            "tipo":"",
+            "situacao":"",
+            "caracteristicas":[
+                "",
+                ""
+            ],
+            "images":{
+                "0":"",
+                "1":"",
+                "2":""
+            }
+        }
+    }
+}
