@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+	<title>Lista de Animais Perdidos</title>
+	<!-- Add Bootstrap stylesheet -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		.list-group-item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			margin-bottom: 20px;
+			border-radius: 20%; /* added to round the image */
+		}
+		h1 {
+			font-size: 36px; /* increased font size */
+			font-family: Arial, sans-serif; /* changed font family */
+			font-weight: bold; /* added font weight */
+			margin-top: 40px; /* added margin */
+			margin-bottom: 20px; /* added margin */
+		}
+		.row {
+			margin-bottom: 20px; /* added margin */
+		}
+	</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./home.html">Busca Petz</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#divdofaq">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/register/register.html">Registro</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Listas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="encontrados.html">Petz Encontrados</a></li>
+                            <li><a class="dropdown-item" href="perdidos.html">Petz Perdidos</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="adocao.html">Adoção</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/chat/chat.html">Chat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/MeusPetz/MeusPetz.html">Meus Petz</a>
+                    </li>
+                </ul>
+
+                <a class="nav-link active" href="./pages/usuario/usuario.html" tabindex="-1" aria-disabled="true">Usuário</a>
+
+            </div>
+        </div>
+    </nav>
+	<div class="container">
+		<h1 class="text-center my-4">Lista de Animais para Adoção</h1>
+		
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-cachorro2">
+						<img src="img/cachorro2.jpg" alt="Cachorro">
+						<p>Cachorro Filhote, encontrado no centro do Recife.</p>
+						<div class="row">
+							<div class="col">
+								<span class="badge rounded-pill text-bg-info">Cinza</span>
+							</div>
+							<div class="col">
+								<span class="badge rounded-pill text-bg-info">Pequeno porte</span>
+							</div>
+							<div class="col">
+								<span class="badge rounded-pill text-bg-info">Filhote</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			
+			</div>
+			
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-canario">
+						<img src="img/canario.jpg" alt="Canario">
+						<p>Canário</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-coelho">
+						 <img src="img/coelho.jpg" alt="Coelho">
+						<p>Coelho</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-passaro">
+						<img src="img/passaro.jpg" alt="Passaro">
+						<p>Pássaro</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-papagaio">
+						<img src="img/papagaio.jpg" alt="Papagaio">
+						<p>Papagaio</p>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-cachorro">
+						 <img src="img/cachorro.jpg" alt="Cachorro">
+						<p>Cachorro Adulto</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-coelho2">
+						<img src="img/coelho2.jpg" alt="Coelho">
+						<p>Coelho</p>
+							
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-gato">
+						<img src="img/gato.jpg" alt="Gato">
+						<p>Gato</p>
+						
+					</li>
+				</ul>
+			</div>
+			
+			<div class="col-md-4">
+				<ul class="list-group">
+					<li class="list-group-item" data-bs-toggle="modal" data-bs-target="#modal-hamster">
+						 <img src="img/ramister.jpg" alt="Ramister">
+						<p>Hamster</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+<!-- Modals -->
+<div class="modal fade" id="modal-cachorro" tabindex="-1" aria-labelledby="modal-cachorro-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-cachorro-label">Cachorro Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/cachorro.jpg" alt="Cachorro">
+                <p>Este cachorro foi encontrado na rua e parece ser um Golden Retriever puro. Ele é um cão de porte médio a grande, de pelo longo e dourado. Ele é conhecido por ser um cão muito amigável, inteligente e leal. 
+							Esse cachorro parece estar em boas condições físicas e de saúde.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-cachorro2" tabindex="-1" aria-labelledby="modal-cachorro2-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-cachorro2-label">Cachorro Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/cachorro2.jpg" alt="Cachorro">
+                <p>Este cachorro foi encontrado na rua e parece ser um Golden Retriever puro. Ele é um cão de porte médio a grande, de pelo longo e dourado. Ele é conhecido por ser um cão muito amigável, inteligente e leal. 
+							Esse cachorro parece estar em boas condições físicas e de saúde.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-gato" tabindex="-1" aria-labelledby="modal-gato-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-gato-label">Gato Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/gato.jpg" alt="Gato">
+                <p>Um gato preto e branco encontrado em uma caixa de papelão.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="modal-papagaio" tabindex="-1" aria-labelledby="modal-papagaio-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-papagaio-label">Gato Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/papagaio.jpg" alt="Papagaio">
+                <p>Esse papagaio foi encontrado em uma caixa de papelão. Ele é uma ave de porte médio, com penas vermelhas, azuis e verdes. Os papagaios são conhecidos por serem animais sociais e inteligentes. 
+							Esse papagaio em particular parece estar em boas condições de saúde.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-hamster" tabindex="-1" aria-labelledby="modal-hamster-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-hamster-label">Gato Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/ramister.jpg" alt="Papagaio">
+                <p>Esse papagaio foi encontrado em uma caixa de papelão. Ele é uma ave de porte médio, com penas vermelhas, azuis e verdes. Os papagaios são conhecidos por serem animais sociais e inteligentes. 
+							Esse papagaio em particular parece estar em boas condições de saúde.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-passaro" tabindex="-1" aria-labelledby="modal-passaro-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-passaro-label">Pássaro Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/passaro.jpg" alt="Pássaro">
+                <p>Um pássaro machucado encontrado em uma árvore, provavelmente uma arara. sdafdsfsdfdfsdfsd fsdf sdfsdfsdfsdfsdfsdfsdfsdfsd fsdsdfsd fsdf</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-canario" tabindex="-1" aria-labelledby="modal-canario-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-canario-label">Pássaro Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/canario.jpg" alt="Pássaro">
+                <p>Um pássaro machucado encontrado em uma árvore, provavelmente uma arara. sdafdsfsdfdfsdfsd fsdf sdfsdfsdfsdfsdfsdfsdfsdfsd fsdsdfsd fsdf</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-coelho" tabindex="-1" aria-labelledby="modal-coelho-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-coelho-label">Pássaro Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/coelho.jpg" alt="Pássaro">
+                <p>Esse coelho cinza foi encontrado na rua com uma das patas machucadas. Ele é um coelho de porte médio, com pelagem preta e olhos castanhos. 
+							Coelhos são animais dóceis e gentis, e esse em particular parece estar com dor e precisa de cuidados veterinários.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="modal-coelho2" tabindex="-1" aria-labelledby="modal-coelho2-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modal-coelho2-label">Pássaro Encontrado</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <img src="img/coelho2.jpg" alt="Pássaro">
+                <p>Esse coelho cinza foi encontrado na rua com uma das patas machucadas. Ele é um coelho de porte médio, com pelagem preta e olhos castanhos. 
+							Coelhos são animais dóceis e gentis, e esse em particular parece estar com dor e precisa de cuidados veterinários.</p>
+            </div>
+        </div>
+    </div>
+</div>
+	<!-- Add Bootstrap JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.2/js/bootstrap.bundle.min.js" ></script>
+</body>
+</html>
