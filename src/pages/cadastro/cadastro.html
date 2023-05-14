@@ -15,8 +15,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="../../assets/cadastro_usuario.css" rel="stylesheet">
 
-    <title>Busca Petz</title>
+
+    <title>Busca Petz / Cadastro</title>
 </head>
 
 <body>
@@ -67,13 +69,112 @@
     <!--Fim do menu-->
 
 
+    <section class="w-100">
+        <!-- Titulo -->
+        <div class="form col-10 mx-auto my-4">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1 style="font-size: 2em;font-weight: 700;">Cadastro</h1>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Pedro" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Alves" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="pedro.alves@gmail.com" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(31) 943912385" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Endereço</label>
+                        <input id="adress" type="text" name="adress" placeholder="Avenida Afonso Pena" required>                        
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Número</label>
+                        <input id="number" type="text" name="number" placeholder="45" required>                        
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Bairro</label>
+                        <input id="Bairro" type="text" name="Bairro" placeholder="Centro" required>                        
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Cidade</label>
+                        <input id="Cidade" type="text" name="Cidade" placeholder="Belo Horizonte" required>                                        
+                    </div>
+                
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="********" required>
+                    </div>
+
+
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="********" required>
+                    </div>
+                    
+
+                </div>
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+
+                        <div class="gender-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="continue-button">
+                    <button><a href="#">Confirmar</a> </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    
+    <section class=my-5 ></section> <!--espaço-->
+
     <section class=my-5 ></section> <!--espaço-->
 
     <!--Rodapé-->
      <section class="w-100 bg-dark">
        <footer>
-           <div class="row">
-               <div class="col-10 mx-auto">
+           <div class="w-100">
+               <div class="col-10 mx-auto py-3">
                    <div class="row">
                        <div class="col-sm-3 text-light">LOGO</div>
                        <div class="col-sm-9 text-light">
