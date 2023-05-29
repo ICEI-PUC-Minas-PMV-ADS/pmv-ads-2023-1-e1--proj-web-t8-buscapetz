@@ -6,8 +6,14 @@
 
 `SEMESTRE`
 
-~~Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.~~
-Sistema de divulgação de animais perdidos e já encontrados.
+sistema de divulgação de animais perdidos e encontrados. O projeto conta com um sistema de fluxo, ou seja, o animal deverá ter um destino sendo seu tutor ou um adotante.
+Como objetivos específicos, pode-se ressaltar:
+* Notificar as pessoas cadastradas na plataforma acerca de animais desaparecidos e
+encontrados em sua região.
+* Programar filtros de busca, como idade, raça, espécie, peso, tamanho, coloração do pelo,
+entre outros, com o intuito de facilitar a busca do animal.
+* Viabilizar a adoção de animais que a longo prazo não foram identificados por uma
+família, dando-lhes uma oportunidade de encontrar um novo lar
 
 ## Integrantes
 
@@ -26,6 +32,7 @@ Sistema de divulgação de animais perdidos e já encontrados.
 ## Instruções de utilização
 
 Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+A aplicação é construída com HTML, Javascript puro e CSS usando bootstrap como biblioteca. todos os arquivos necessários para executar a aplicação se encontram versionados então para executar basta clonar o repositório e iniciar no navegador o `index.html` que se encntra na pasta `src`.
 
 # Documentação
 
@@ -41,12 +48,12 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 <li><a href="docs/09-Registro de Testes de Software.md"> Registro de Testes de Software</a></li>
 <li><a href="docs/10-Apresentação do Projeto.md"> Apresentação do Projeto</a></li>
 <li><a href="docs/11-Referências.md"> Referências</a></li>
-<li><a href="https://docs.google.com/document/d/1XBc6Ri8cBMn1FHNHYje0O8PNrpC9fTXQ/edit?pli=1"> Documento de referência</a></li>
 </ol>
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-buscapetz/src/home.html"> link para o site </a>
+
 
 # Armazenamento do Código-Fonte
 
