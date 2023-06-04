@@ -25,7 +25,7 @@
 <!--Inicio do menu-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../../home.html">Busca Petz</a>
+            <a class="navbar-brand" href="../../index.html">Busca Petz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../../home.html#FAQ">FAQ</a>
+                        <a class="nav-link active" aria-current="page" href="../../index.html#FAQ">FAQ</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="../register/register.html">Registro</a>
@@ -72,7 +72,7 @@
     <section class="w-100">
         <!-- Titulo -->
         <div class="form col-10 mx-auto my-4">
-            <form action="#">
+            <form id="formularioCadastroUsuario" name="formularioCadastroUsuario" onsubmit="return false">
                 <div class="form-header">
                     <div class="title">
                         <h1 style="font-size: 2em;font-weight: 700;">Cadastro</h1>
@@ -82,41 +82,41 @@
                 <div class="input-group">
                     <div class="input-box">
                         <label for="firstname">Primeiro Nome</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Pedro" required>
+                        <input id="firstname" type="text" name="firstname" placeholder="Ex: Pedro" required>
                     </div>
 
                     <div class="input-box">
                         <label for="lastname">Sobrenome</label>
-                        <input id="lastname" type="text" name="lastname" placeholder="Alves" required>
+                        <input id="lastname" type="text" name="lastname" placeholder="Ex: Alves" required>
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="pedro.alves@gmail.com" required>
+                        <input id="email" type="email" name="email" placeholder="Ex: pedro.alves@gmail.com" required>
                     </div>
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="number" type="tel" name="number" placeholder="(31) 943912385" required>
+                        <input id="tel" type="tel" name="number" placeholder="Ex: (00) 99999-9999" required>
                     </div>
 
                     <div class="input-box">
                         <label for="number">Endereço</label>
-                        <input id="adress" type="text" name="adress" placeholder="Avenida Afonso Pena" required>                        
+                        <input id="adress" type="text" name="adress" placeholder="Ex: Avenida Afonso Pena" required>                        
                     </div>
 
                     <div class="input-box">
                         <label for="number">Número</label>
-                        <input id="number" type="text" name="number" placeholder="45" required>                        
+                        <input id="number" type="text" name="number" placeholder="Ex: 45" required>                        
                     </div>
 
                     <div class="input-box">
                         <label for="number">Bairro</label>
-                        <input id="Bairro" type="text" name="Bairro" placeholder="Centro" required>                        
+                        <input id="Bairro" type="text" name="Bairro" placeholder="Ex: Centro" required>                        
                     </div>
 
                     <div class="input-box">
                         <label for="number">Cidade</label>
-                        <input id="Cidade" type="text" name="Cidade" placeholder="Belo Horizonte" required>                                        
+                        <input id="Cidade" type="text" name="Cidade" placeholder="Ex: Belo Horizonte" required>                                        
                     </div>
                 
 
@@ -141,18 +141,18 @@
 
                     <div class="gender-group">
                         <div class="gender-input">
-                            <input id="female" type="radio" name="gender">
+                            <input id="female" type="radio" name="gender" value="feminino">
                             <label for="female">Feminino</label>
                         </div>
 
                         <div class="gender-input">
-                            <input id="male" type="radio" name="gender">
+                            <input id="male" type="radio" name="gender" value="masculino">
                             <label for="male">Masculino</label>
                         </div>
 
 
                         <div class="gender-input">
-                            <input id="none" type="radio" name="gender">
+                            <input id="none" type="radio" name="gender" value="pnd">
                             <label for="none">Prefiro não dizer</label>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
 
 
                 <div class="continue-button">
-                    <button><a href="#">Confirmar</a> </button>
+                    <button onclick="cadastroUsuario();">Confirmar </button>
                 </div>
             </form>
         </div>
@@ -192,9 +192,9 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script> -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -203,6 +203,31 @@
     -->
 
 
+    <script type="text/javascript" src="../../data/coockies.js"></script>
+    <script type="text/javascript">
+        var usuario = getCookie("user");
+        function cadastroUsuario() {
+            // document.getElementById('');
+            var firstname = document.getElementById('firstname');
+            var lastname = document.getElementById('lastname');
+            var email = document.getElementById('email');
+            var tel = document.getElementById('tel');
+            var adress = document.getElementById('adress');
+            var number = document.getElementById('number');
+            var Bairro = document.getElementById('Bairro');
+            var Cidade = document.getElementById('Cidade');
+            var password = document.getElementById('password');
+            var confirmPassword = document.getElementById('confirmPassword');
+            var gender = document.querySelector('input[name="gender"]:checked');
+            console.log(firstname.value,lastname.value,email.value,tel.value,adress.value,number.value,Bairro.value,Cidade.value,password.value,gender.value);
+            cadastrado = cadUser(firstname.value,lastname.value,email.value,tel.value,adress.value,number.value,Bairro.value,Cidade.value,password.value,gender.value);
+            console.log(cadastrado);
+            if( cadastrado ){
+                window.location.replace('../login/login.html');
+            }
+            return false;
+        }
+    </script>
 </body>
 
 </html>
