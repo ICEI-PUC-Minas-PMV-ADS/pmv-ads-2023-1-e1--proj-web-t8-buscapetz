@@ -10,33 +10,33 @@ A definição exata do problema e os pontos mais relevantes a serem tratados nes
 As personas levantadas durante o processo de entendimento do problema são apresentadas a seguir:
 
 ### Persona 1 - Adriana Maria
-**Idade:** 65
-**Localidade:** Contagem - Minas Gerais
-**Ocupação:** Aposentada
-**Moradia:** Casa
-**Animal:** Gato
+**Idade:** 65  
+**Localidade:** Contagem - Minas Gerais  
+**Ocupação:** Aposentada  
+**Moradia:** Casa  
+**Animal:** Gato  
 
 **Relação com a tecnologia:** uma senhora com acesso à internet e conhecimento limitado perante as tecnologias atuais, constantemente precisa do auxílio de seus familiares para acessar redes sociais.
 
 **O que ela procura:** divulgar seu animal desaparecido.
 
 ### Persona 2 - Anna Beatriz
-**Idade:** 20
-**Localidade:** Nova Lima - Minas Gerais
-**Ocupação:** Estudante
-**Moradia:** Apartamento (3° andar)
-**7Animal:** Cachorro
+**Idade:** 20  
+**Localidade:** Nova Lima - Minas Gerais  
+**Ocupação:** Estudante  
+**Moradia:** Apartamento (3° andar)  
+**7Animal:** Cachorro  
 
 **Relação com a tecnologia:** é uma jovem atualizada com as tendências e tem fácil acesso à internet.
 
 **O que ela procura:** durante um passeio, sua cadela Canela se soltou da coleira e se perdeu pelo seu bairro, ela busca um método efetivo para encontrar o seu animal perdido.
 
 ### Persona 3 - Carlos Gomes
-**Idade:** 12
-**Localidade:** Santa Luzia - Minas Gerais
-**Ocupação:** Estudante
-**Moradia:** Apartamento (5º andar)
-**Animal:** Cachorro
+**Idade:** 12  
+**Localidade:** Santa Luzia - Minas Gerais  
+**Ocupação:** Estudante  
+**Moradia:** Apartamento (5º andar)  
+**Animal:** Cachorro  
 
 **Relação com a tecnologia:** é um jovem com acesso à internet
 
@@ -44,10 +44,10 @@ As personas levantadas durante o processo de entendimento do problema são apres
 sua região que esteja doando.
 
 ### Persona 4 - André Alves
-**Idade:** 40
-**Localidade:** Ribeirão das Neves - Minas Gerais
-**Ocupação:** Vendedor
-**Moradia:** Casa
+**Idade:** 40  
+**Localidade:** Ribeirão das Neves - Minas Gerais  
+**Ocupação:** Vendedor  
+**Moradia:** Casa  
 
 **Relação com a tecnologia:** Possui afinidade com eletrônicos devido ao contato diário. Atualmente seu celular é indispensável para todas as suas atividades.
 
