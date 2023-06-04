@@ -52,7 +52,7 @@ A aplicação é construída com HTML, Javascript puro e CSS usando bootstrap co
 
 # Hospedagem
 
-<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-buscapetz/src/home.html"> link para o site </a>
+<a href="https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-1-e1--proj-web-t8-buscapetz/src/index.html"> link para o site </a>
 
 
 # Armazenamento do Código-Fonte
