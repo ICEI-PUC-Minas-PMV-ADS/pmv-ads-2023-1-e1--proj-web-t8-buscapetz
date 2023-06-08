@@ -203,9 +203,9 @@
     -->
 
 
-    <script type="text/javascript" src="../../data/coockies.js"></script>
+    <script type="text/javascript" src="../../data/userData.js"></script>
     <script type="text/javascript">
-        var usuario = getCookie("user");
+        // var usuario = getCookie("user");
         function cadastroUsuario() {
             // document.getElementById('');
             var firstname = document.getElementById('firstname');
@@ -220,7 +220,7 @@
             var confirmPassword = document.getElementById('confirmPassword');
             var gender = document.querySelector('input[name="gender"]:checked');
             console.log(firstname.value,lastname.value,email.value,tel.value,adress.value,number.value,Bairro.value,Cidade.value,password.value,gender.value);
-            cadastrado = cadUser(firstname.value,lastname.value,email.value,tel.value,adress.value,number.value,Bairro.value,Cidade.value,password.value,gender.value);
+            cadastrado = AdicionarUsuario({'firstname': firstname.value,'lastname': lastname.value,'email': email.value,'tel': tel.value,'adress': adress.value,'number': number.value,'Bairro': Bairro.value,'Cidade': Cidade.value,'password': password.value,'gender': gender.value});
             console.log(cadastrado);
             if( cadastrado ){
                 window.location.replace('../login/login.html');

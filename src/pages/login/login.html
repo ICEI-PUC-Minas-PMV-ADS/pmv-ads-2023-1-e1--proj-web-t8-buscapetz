@@ -40,15 +40,16 @@
   
   </div>
 
-  <script type="text/javascript" src="../../data/coockies.js"></script>
+  <script type="text/javascript" src="../../data/userData.js"></script>
   <script type="text/javascript">
-    var usuario = getCookie("user");
+    // var usuario = getCookie("user");
     function logarUsuario() {
       // body...
       var email = document.getElementById('email');
       var password = document.getElementById('password');
-      logado = logUser(email.value,password.value);
+      logado = loginUsuario(email.value,password.value);
       if(logado){
+        console.log(logado);
         window.location.replace('../MeusPetz/MeusPetz.html');
       }else{
         window.alert("Usuário ou senha inválidos");
