@@ -6,9 +6,9 @@ if(tbUsuario == null || tbUsuario == undefined){
 }
 var usuarioLogado = localStorage.getItem("usuarioLogado");
 usuarioLogado = JSON.parse(usuarioLogado); 
-if(usuarioLogado == null || usuarioLogado == undefined){
-  usuarioLogado = [];
-}
+// if(usuarioLogado == null || usuarioLogado == undefined){
+//   usuarioLogado = [];
+// }
 
 //CRUD
 function AdicionarUsuario(usuario){
