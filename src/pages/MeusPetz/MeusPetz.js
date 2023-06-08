@@ -16,7 +16,7 @@ newHtml = '   <div class="row align-items-start">';//row
 		newHtml +='         <div class="row">';
 		newHtml +='           <div class="col-12 col-sm-10 mx-auto">';
 		newHtml +='             <div class="mx-auto w-100" style="max-height: 400px;">';
-		newHtml +='               <img src="https://www.patasdacasa.com.br/sites/patasdacasa/files/styles/webp/public/noticias/2022/06/gato-com-heterocromia-quais-as-causas-relacao-com-surdez-cuidados-e-muito-mais.jpg.webp?itok=N9nTRxYI" class="img-thumbnail rounded d-block mx-auto" alt="...">';
+		newHtml +='               <img src="'+(petzAtual['imgPath']?petzAtual['imgPath']:"https://www.patasdacasa.com.br/sites/patasdacasa/files/styles/webp/public/noticias/2022/06/gato-com-heterocromia-quais-as-causas-relacao-com-surdez-cuidados-e-muito-mais.jpg.webp?itok=N9nTRxYI")+'" class="img-thumbnail rounded d-block mx-auto" id="img_pet_'+i+'" alt="...">';
 		newHtml +='             </div>';
 		newHtml +='           </div>';
 		newHtml +='         </div>';
