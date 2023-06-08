@@ -495,8 +495,25 @@
         var castrado = document.getElementById('castrado');
         var genero = document.getElementById('genero');
         var observacoes = document.getElementById('observacoes');
-        AdicionarPetz({'status' : status.value,'nomePet' : nomePet.value,'especie' : especie.value,'raca' : raca.value,'porte' : porte.value,'idade' : idade.value,'pelo_cor' : pelo_cor.value,'docil' : docil.value,'chipado' : chipado.value,'olhos_cor' : olhos_cor.value,'castrado' : castrado.value,'genero' : genero.value,'observacoes' : observacoes.value}, usuarioLogado);
+        
+        var imgPath = document.querySelector('input[type=file]').files[0];//('#inputGroupFile02');
+        var reader = new FileReader();
+        // console.log(imgPath);
 
+        reader.addEventListener("load", function () {
+            // convert image file to base64 string and save to localStorage
+            localStorage.setItem("image", reader.result);
+        }, false);
+
+        if (imgPath) {
+            reader.readAsDataURL(imgPath);
+        }
+
+        // console.log(localStorage.getItem('image'));
+
+        AdicionarPetz({'status' : status.value,'nomePet' : nomePet.value,'especie' : especie.value,'raca' : raca.value,'porte' : porte.value,'idade' : idade.value,'pelo_cor' : pelo_cor.value,'docil' : docil.value,'chipado' : chipado.value,'olhos_cor' : olhos_cor.value,'castrado' : castrado.value,'genero' : genero.value,'observacoes' : observacoes.value, 'imgPath': localStorage.getItem('image')}, usuarioLogado);
+
+        //Redirect
       }
     </script>
 

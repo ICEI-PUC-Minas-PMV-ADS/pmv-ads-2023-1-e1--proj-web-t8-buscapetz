@@ -26,8 +26,8 @@ if(tbPetz == null || tbPetz == undefined){
 
 //CRUD
 function AdicionarPetz(petz, usuario){
-  console.log(petz);
-  console.log(usuario);
+  // console.log(petz);
+  // console.log(usuario);
   var novoPetz = JSON.stringify({
   	user_name   : usuario['firstname'],
     status      : petz['status'],
@@ -42,12 +42,17 @@ function AdicionarPetz(petz, usuario){
     olhos_cor   : petz['olhos_cor'],
     castrado    : petz['castrado'],
     genero      : petz['genero'],
-    observacoes : petz['observacoes']
+    observacoes : petz['observacoes'],
+    imgPath     : petz['imgPath']
   });
-  console.log(novoPetz);
+  // console.log(novoPetz);
   tbPetz.push(novoPetz);
   localStorage.setItem("tbPetz", JSON.stringify(tbPetz));
-  console.log("Registro adicionado.");
+  // console.log("Registro adicionado.");
+  
+  localStorage.removeItem("image");
+  // console.log(localStorage.getItem('image'));
+
   return true;
 }
 
@@ -104,7 +109,7 @@ function Editar(indice_selecionado){
   return true;
 }
 
-function Excluir(indice_selecionado){
+function ExcluirPetz(indice_selecionado){
   tbPetz.splice(indice_selecionado, 1);
   localStorage.setItem("tbPetz", JSON.stringify(tbPetz));
   console.log("Registro excluído.");
@@ -113,3 +118,16 @@ function Excluir(indice_selecionado){
 
 
 
+//Imagens
+function getBase64Image(img) {
+    var canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    var ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+
+    var dataURL = canvas.toDataURL("image/png");
+
+    return dataURL.replace(/^data:image\/(png|jpg);base64,/, "");
+}
