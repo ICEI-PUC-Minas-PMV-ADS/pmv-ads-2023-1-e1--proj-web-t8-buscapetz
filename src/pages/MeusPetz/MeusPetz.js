@@ -1,16 +1,11 @@
 var elem = document.querySelector('#container_petz_usuario');
 
-// Get HTML content
-var html = elem.innerHTML;
-
 usuarioPetz = ListarPetz(usuarioLogado.firstname);
 console.log(usuarioPetz);
 
 var newHtml = null;
-// Set HTML content
 
-newHtml = '   <div class="row align-items-start">';
-//row
+newHtml = '   <div class="row align-items-start">';//row
 
   petzEncontrados = [];
   for (var i = usuarioPetz.length - 1; i >= 0; i--) {
@@ -51,7 +46,7 @@ newHtml = '   <div class="row align-items-start">';
 		newHtml +='       </section>';
 		newHtml +='     </div>  ';
   }
-//row
-newHtml +='   </div>';
+
+newHtml +='   </div>';//row
 
 elem.innerHTML = newHtml;
