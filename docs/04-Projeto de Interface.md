@@ -12,13 +12,13 @@ O fluxograma apresentado na figura acima mostra as possíveis interações do us
 
 ## Wireframes
 
- git commit -m "1 Menu
-Conforme o fluxograma apresentado no item anterior, as telas do projeto serão apresentadas com detalhamento maior a seguir. Nas figuras abaixo, demonstra-se o menu superior exibido após o login do usuário."
+#1 Menu
+Conforme o fluxograma apresentado no item anterior, as telas do projeto serão apresentadas com detalhamento maior a seguir. Nas figuras abaixo, demonstra-se o menu superior exibido após o login do usuário.
 
 ![Exemplo de Menu Principal](img/Menu%20do%20Usu%C3%A1rio.png)
 ![Exemplo de Menu Listas](img/menu%20listas.png)
 
-2 Página Inicial
+#2 Página Inicial
 A página inicial mostra um vídeo curto sobre o projeto e um banner com encontros já proporcionados pelo programa.  A barra superior traz elementos distintos:
 
 -	LOGO: Imagem da logo do projeto;
