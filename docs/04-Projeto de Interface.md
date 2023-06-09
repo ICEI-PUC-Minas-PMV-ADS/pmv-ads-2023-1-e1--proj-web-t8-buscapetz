@@ -38,35 +38,36 @@ O fluxograma apresentado na figura acima mostra as possíveis interações do us
 #4 Cadastro     
  	A página de cadastro serve para que os usuários criem uma conta personalizada no sistema. Ela é composta por campos de entrada de texto para informações pessoais sendo elas nome completo, e-mail, telefone, com validação de entrada para garantir a precisão dos dados, conforme figura a seguir.   
 
-![Exemplo de Cadastro 1](img/cadastro%20usuario%201.png)
+![Exemplo de Cadastro 1](img/cadastro%20usuario%201.png)   
 
     Após preencher os campos da primeira parte, o usuário pode clicar em um botão de avanço para seguir para a segunda etapa onde iŕa preencher os campos relacionados ao endereço completo do usuário, rua, número, complemento (preenchimento opcional), bairro, cidade, estado e CEP conforme a figura abaixo.    
 
-![Exemplo de Cadastro 2](img/cadastro%20usuario%202.png)
+![Exemplo de Cadastro 2](img/cadastro%20usuario%202.png)   
 
 5 Meus Petz     
-    A página Meus Petz, é onde fica reunida as informações de todos os animais cadastrados pelo usuário, dando acesso também a um novo registro de animal conforme demonstrado na figura a seguir. Essa página também dá acesso ao usuário, aos animais semelhantes ao divulgado por ela, assim que ela passa o mouse em cima do animal registrado, abre um leque de informações sobre o mesmo e o botão “Animais Semelhantes Cadastrados”.   
+    A página Meus Petz, é onde fica reunida as informações de todos os animais cadastrados pelo usuário, dando acesso também a um novo registro de animal conforme demonstrado na figura a seguir.    
+    Essa página também dá acesso ao usuário, aos animais semelhantes ao divulgado por ela, assim que ela passa o mouse em cima do animal registrado, abre um leque de informações sobre o mesmo e o botão “Animais Semelhantes Cadastrados”.    
 
 ![Exemplo de Menu Petz](img/meus%20petz.png)
 
 #6 Ache seu PET     
     A página Ache seu PET, é o principal objetivo do sistema onde o usuário irá comparar seu animal com outros animais registrados no sistema que possuem características semelhantes ao seu. Esses animais são selecionados de acordo com as TAGS cadastradas pelo usuário assim que ele registra o mesmo na plataforma.   
 
-![Exemplo de Ache seu Petz](img/animais%20perdidos.png)
+![Exemplo de Ache seu Petz](img/animais%20perdidos.png)   
 
 #7 Registro     
     O comando "registro" permite que os usuários cadastrem no sistema, animais perdidos ou encontrados, fornecendo informações importantes como espécie, raça, porte e idade, conforme mostrado a seguir.   
 
-![Exemplo de Registro 1](img/registro%20animal%201.png)
+![Exemplo de Registro 1](img/registro%20animal%201.png)   
 
     Além disso, na figura abaixo, é possível descrever o fenótipo do animal e na seguinte, os usuários podem adicionar um pequeno texto com outras características relevantes do animal.   
     
-![Exemplo de Registro 2](img/registro%20animal%202.png)
-![Exemplo de Registro 3](img/registro%20animal%203.png)
+![Exemplo de Registro 2](img/registro%20animal%202.png)   
+![Exemplo de Registro 3](img/registro%20animal%203.png)   
     
     Por fim, na próxima imagem, é possível incluir uma foto do animal, que ajudará a tornar o perfil do pet mais completo e atrativo para possíveis interessados na adoção ou na busca por animais perdidos.  
 
-![Exemplo de Registro 4](img/registro%20animal%204.png)
+![Exemplo de Registro 4](img/registro%20animal%204.png)   
 
 #8 Listas    
  	Na figura subsequente, temos um exemplo da página de lista, sejam animais encontrados, perdidos ou disponíveis para adoção, esses geralmente são registrados como encontrados e após um tempo, caso não seja reconhecido por seu dono, entra na lista de adoção.   
