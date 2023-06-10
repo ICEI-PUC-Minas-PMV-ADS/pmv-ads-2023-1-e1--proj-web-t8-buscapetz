@@ -108,7 +108,7 @@ Caso o usuário ainda não tenha um cadastro, poderá ser realizado na tela inic
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e clique no botão login 
 3. Na página login tem o botão Novo Cadastro
 
@@ -151,7 +151,7 @@ Essa tela permite ao usuário realizar alterações dos seus dados pessoais e se
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e faça seu login ou se registre.
 3. Após o Login, em todas as páginas, estará disponível no menu à direita o nome do usuário
 4. Ao clicar no nome do usuário, ele entrará na página do Usuário
@@ -202,7 +202,7 @@ Essa tela permite que o usuário realize um cadastro do seu animal perdido, base
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e faça seu login ou se registre
 3. Na página Meus Petz acesse no menu Registro ou na tela do Meus Petz clique em Registre um Pet
 
@@ -250,7 +250,7 @@ Esta é a página principal após o usuário efetuar o Login. Essa tela permite 
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e faça seu login ou se registre
 3. Após o Login você será redirecionado automaticamente para a página Meus Petz
 ## Visualização da tela de animais encontrados
@@ -291,7 +291,7 @@ Essa tela permite que o usuário visualize quais os animais foram encontrados me
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e faça seu login ou se registre
 3. Na página Meus Petz acesse o menu Listas
 4. No menu Listas selecione a lista de Animais Encontrados
@@ -335,7 +335,7 @@ Essa tela permite que o usuário visualize quais os animais foram perdidos confo
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e faça seu login ou se registre
 3. Na página Meus Petz acesse o menu Listas
 4. No menu Listas selecione a lista de Animais Perdidos
@@ -378,7 +378,7 @@ Essa tela permite que o usuário visualize quais os animais estão disponíveis 
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e faça seu login ou se registre
 3. Na página Meus Petz acesse o menu Listas
 4. No menu Listas selecione a lista de Animais Para Adoção
@@ -447,7 +447,7 @@ Essa tela permite que o usuário visualize seu animal registrado e o compare com
 
 ### Instruções de acesso
 
-1.Abra um navegador de Internet e pesquise Busca Petz
+1. Abra um navegador de Internet e pesquise Busca Petz
 2. Acesse a Home Page e clique no botão login ou se registre
 3. Na página Meus Petz registre um PET
 4. Após o usuário registrar um PET, o perfil dele estará disponível na página Meus Petz e abaixo de suas informações terá um botão COMPARE
