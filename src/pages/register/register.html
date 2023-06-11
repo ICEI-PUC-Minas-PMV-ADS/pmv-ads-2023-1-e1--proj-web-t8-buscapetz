@@ -511,7 +511,10 @@
 
         // console.log(localStorage.getItem('image'));
 
-        AdicionarPetz({'status' : status.value,'nomePet' : nomePet.value,'especie' : especie.value,'raca' : raca.value,'porte' : porte.value,'idade' : idade.value,'pelo_cor' : pelo_cor.value,'docil' : docil.value,'chipado' : chipado.value,'olhos_cor' : olhos_cor.value,'castrado' : castrado.value,'genero' : genero.value,'observacoes' : observacoes.value, 'imgPath': localStorage.getItem('image')}, usuarioLogado);
+        cadastrado = AdicionarPetz({'status' : status.value,'nomePet' : nomePet.value,'especie' : especie.value,'raca' : raca.value,'porte' : porte.value,'idade' : idade.value,'pelo_cor' : pelo_cor.value,'docil' : docil.value,'chipado' : chipado.value,'olhos_cor' : olhos_cor.value,'castrado' : castrado.value,'genero' : genero.value,'observacoes' : observacoes.value, 'imgPath': localStorage.getItem('image')}, usuarioLogado);
+        if( cadastrado ){
+          window.location.replace('../MeusPetz/MeusPetz.html');
+        }
 
         //Redirect
       }
