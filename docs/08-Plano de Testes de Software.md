@@ -140,34 +140,3 @@
 
 **Resultado Esperado:** O sistema deve exibir corretamente a lista de possíveis adoções, apresentando todas as informações relevantes de cada animal disponível para adoção.
 
-### RF-011: Notificação de desaparecimento.
-
-**Cenário de Teste:**
-
-**Descrição:** Teste de envio de notificação de desaparecimento.
-
-**Pré-condições:** O usuário está autenticado no sistema e possui um animal desaparecido.
-
-**Passos:**
-* Acessar a página de notificação de desaparecimento no sistema.
-* Selecionar o animal desaparecido correspondente.
-* Preencher corretamente todos os campos obrigatórios do formulário de notificação.
-* Clicar no botão de "Enviar Notificação".
-
-**Resultado Esperado:** O sistema deve enviar a notificação de desaparecimento com sucesso, alertando os usuários interessados sobre o caso.
-
-### RF-012: Notificação de encontro.
-
-**Cenário de Teste:**
-
-**Descrição:** Teste de envio de notificação de encontro.
-
-**Pré-condições:** O usuário está autenticado no sistema e existem animais encontrados disponíveis.
-
-**Passos:**
-* Acessar a página de notificação de encontro no sistema.
-* Selecionar o animal encontrado correspondente.
-* Preencher corretamente todos os campos obrigatórios do formulário de notificação.
-* Clicar no botão de "Enviar Notificação".
-
-**Resultado Esperado:** O sistema deve enviar a notificação de encontro com sucesso, informando os usuários interessados sobre a localização do animal encontrado.
