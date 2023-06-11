@@ -59,22 +59,6 @@
 
 **Resultado Esperado:** O sistema deve criar um novo anúncio de desaparecimento com sucesso, associado ao animal selecionado.
 
-### RF-005: O usuário deve poder registrar que avistou um animal anunciado como desaparecido - Reporte de avistamento.
-
-**Cenário de Teste:**
-
-**Descrição:** Teste de registro de avistamento de um animal desaparecido.
-
-**Pré-condições:** O usuário está autenticado no sistema e existem anúncios de desaparecimento ativos.
-
-**Passos:**
-* Acessar a página de registro de avistamento no sistema.
-* Selecionar o anúncio de desaparecimento correspondente ao animal avistado.
-* Preencher corretamente todos os campos obrigatórios do formulário de registro de avistamento.
-* Clicar no botão de "Registrar Avistamento".
-
-**Resultado Esperado:** O sistema deve registrar o avistamento do animal desaparecido com sucesso, associado ao anúncio correspondente.
-
 ### RF-006: O usuário deve poder registrar que resgatou um animal antes reportado como desaparecido - Reporte de resgate.
 
 **Cenário de Teste:**
@@ -90,22 +74,6 @@
 * Clicar no botão de "Registrar Resgate".
 
 **Resultado Esperado:** O sistema deve registrar o resgate do animal desaparecido com sucesso, associado ao anúncio correspondente.
-
-### RF-007: O sistema deve permitir que usuários troquem mensagens entre quem reportou um desaparecimento e quem reportou o avistamento ou resgate.
-
-**Cenário de Teste:**
-
-**Descrição:** Teste de troca de mensagens entre usuários envolvidos em um caso de desaparecimento, avistamento ou resgate.
-
-**Pré-condições:** O usuário está autenticado no sistema e existem mensagens relacionadas a um caso de desaparecimento, avistamento ou resgate.
-
-**Passos:**
-* Acessar a página de mensagens no sistema.
-* Selecionar a conversa relacionada ao caso em questão.
-* Enviar uma mensagem para o outro usuário envolvido.
-* Aguardar a resposta do outro usuário.
-
-**Resultado Esperado:** O sistema deve permitir a troca de mensagens entre os usuários envolvidos e exibir as mensagens corretamente na conversa.
 
 ### RF-008: Listagem de pets desaparecidos.
 
