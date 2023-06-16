@@ -151,44 +151,52 @@
       <div class="row">
         <div class="col">
           <section class="col-8 mx-auto">
-            <label for="exampleDataList" class="form-label"
-              >ESPÉCIE</label
-            >
-            <input
-              class="form-control"
-              list="datalistOptionsEspecie"
-              placeholder="Type to search..."
-              id="especie"
-            />
+            <label for="especie" class="form-label">ESPÉCIE</label>
+            <input class="form-control" list="datalistOptionsEspecie" placeholder="Type to search..." id="especie" onchange="updateRacas(this.value)" />
             <datalist id="datalistOptionsEspecie">
               <option value="Cachorro"></option>
               <option value="Gato"></option>
             </datalist>
           </section>
         </div>
-
+    
         <div class="col">
           <section class="col-8 mx-auto">
-            <label for="exampleDataList" class="form-label"
-              >RAÇA</label 
-            >
-            <input
-              class="form-control"
-              list="datalistOptionsRaca"
-              placeholder="Type to search..."
-              id="raca"
-            />
-            <datalist id="datalistOptionsRaca">
-              <option value="San Francisco"></option>
-              <option value="New York"></option>
-              <option value="Seattle"></option>
-              <option value="Los Angeles"></option>
-              <option value="Chicago"></option>
-            </datalist>
+            <label for="raca" class="form-label">RAÇA</label>
+            <input class="form-control" list="datalistOptionsRaca" placeholder="Type to search..." id="raca" />
+            <datalist id="datalistOptionsRaca"></datalist>
           </section>
         </div>
       </div>
     </div>
+    
+    <script>
+      function updateRacas(especie) {
+        const racaInput = document.getElementById("raca");
+        const racaDatalist = document.getElementById("datalistOptionsRaca");
+        racaInput.value = "";
+        racaDatalist.innerHTML = "";
+    
+        if (especie === "Gato") {
+          racaDatalist.innerHTML = `
+            <option value="Persa"></option>
+            <option value="Siames"></option>
+            <option value="Maine Coon"></option>
+            <option value="Sphynx"></option>
+            <option value="Bengal"></option>
+          `;
+        } else if (especie === "Cachorro") {
+          racaDatalist.innerHTML = `
+            <option value="Labrador Retriever"></option>
+            <option value="Bulldog"></option>
+            <option value="Poodle"></option>
+            <option value="Golden Retriever"></option>
+            <option value="German Shepherd"></option>
+          `;
+        }
+      }
+    </script>
+    
 
     <section class="my-3"></section>
 
