@@ -15,7 +15,7 @@
 
     <title>Busca Petz</title>
   </head>
-<!--Inicio menu-->
+  <!--Inicio menu-->
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -34,7 +34,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../../index.html#FAQ"
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="../../index.html#FAQ"
                 >FAQ</a
               >
             </li>
@@ -56,20 +59,17 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-
                 Listas
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../listas/encontrados.html"
-                    >Petz Encontrados</a>                 >
+                  <a class="dropdown-item" href="../listas/encontrados.html"
+                    >Petz Encontrados</a
+                  >
+                  >
                 </li>
                 <li>
-                  <a
-                    class="dropdown-item"
-                    href="../listas/perdidos.html"
+                  <a class="dropdown-item" href="../listas/perdidos.html"
                     >Petz Perdidos</a
                   >
                 </li>
@@ -111,14 +111,18 @@
         </div>
       </div>
     </nav>
-<!--Fim menu-->
+    <!--Fim menu-->
 
-<!--Inicio registro-->
+    <!--Inicio registro-->
     <h3 class="text-center">REGISTRE AQUI O SEU ANIMAL</h3>
     <section class="my-3"></section>
 
     <section class="col-9 mx-auto">
-      <select class="form-select" aria-label="Default select example" id="status">
+      <select
+        class="form-select"
+        aria-label="Default select example"
+        id="status"
+      >
         <option selected>Escolha uma opção</option>
         <option value="1">Perdi um animal</option>
         <option value="2">Encontrei um animal perdido</option>
@@ -131,9 +135,7 @@
       <div class="row">
         <div class="col">
           <section class="col-8 mx-auto">
-            <label for="exampleDataList" class="form-label"
-              >Nome</label
-            >
+            <label for="exampleDataList" class="form-label">Nome</label>
             <input
               type="text"
               class="form-control"
@@ -152,35 +154,45 @@
         <div class="col">
           <section class="col-8 mx-auto">
             <label for="especie" class="form-label">ESPÉCIE</label>
-            <input class="form-control" list="datalistOptionsEspecie" placeholder="Type to search..." id="especie" onchange="updateRacas(this.value)" />
+            <input
+              class="form-control"
+              list="datalistOptionsEspecie"
+              placeholder="Type to search..."
+              id="especie"
+              onchange="updateRacas(this.value)"
+            />
             <datalist id="datalistOptionsEspecie">
               <option value="Cachorro"></option>
               <option value="Gato"></option>
             </datalist>
           </section>
         </div>
-    
+
         <div class="col">
           <section class="col-8 mx-auto">
             <label for="raca" class="form-label">RAÇA</label>
-            <input class="form-control" list="datalistOptionsRaca" placeholder="Type to search..." id="raca" />
+            <input
+              class="form-control"
+              list="datalistOptionsRaca"
+              placeholder="Type to search..."
+              id="raca"
+            />
             <datalist id="datalistOptionsRaca"></datalist>
           </section>
         </div>
       </div>
     </div>
-    
+
     <script>
       function updateRacas(especie) {
         const racaInput = document.getElementById("raca");
         const racaDatalist = document.getElementById("datalistOptionsRaca");
         racaInput.value = "";
         racaDatalist.innerHTML = "";
-    
+
         if (especie === "Gato") {
           racaDatalist.innerHTML = `
-            
-<option value="Abissínio">Abissínio</option>
+            <option value="Abissínio">Abissínio</option>
 <option value="American Bobtail">American Bobtail</option>
 <option value="American Curl">American Curl</option>
 <option value="American Shorthair">American Shorthair</option>
@@ -375,7 +387,7 @@
 <option value="West Highland White Terrier">West Highland White Terrier</option>
 <option value="Whippet">Whippet</option>
 <option value="Xoloitzcuintli">Xoloitzcuintli</option>
-<option value="Yorkshire Terrier">Yorkshire Terrier</option>
+<option value="Yorkshire Terrier">Yorkshire Terrier</option> 
           `;
         }
       }
@@ -387,9 +399,7 @@
       <div class="row">
         <div class="col">
           <section class="col-8 mx-auto">
-            <label for="exampleDataList" class="form-label"
-              >PORTE</label
-            >
+            <label for="exampleDataList" class="form-label">PORTE</label>
             <input
               class="form-control"
               list="datalistOptionsPorte"
@@ -405,10 +415,8 @@
         </div>
 
         <div class="col">
-          <section class="col-8 mx-auto" >
-            <label for="exampleDataList" class="form-label"
-              >IDADE</label
-            >
+          <section class="col-8 mx-auto">
+            <label for="exampleDataList" class="form-label">IDADE</label>
             <input
               class="form-control"
               list="datalistOptionsIdade"
@@ -444,10 +452,8 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <section class="col-8 mx-auto" >
-            <label for="exampleDataList" class="form-label"
-              >COR DO PELO</label
-            >
+          <section class="col-8 mx-auto">
+            <label for="exampleDataList" class="form-label">COR DO PELO</label>
             <input
               class="form-control"
               list="datalistOptionsPelo"
@@ -470,7 +476,7 @@
         </div>
 
         <div class="col">
-          <section class="col-8 mx-auto" >
+          <section class="col-8 mx-auto">
             <label for="exampleDataList" class="form-label"
               >É UM ANIMAL DÓCIL?</label
             >
@@ -498,7 +504,7 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <section class="col-8 mx-auto" >
+          <section class="col-8 mx-auto">
             <label for="exampleDataList" class="form-label"
               >POSSUI CHIP DE RASTREIO?</label
             >
@@ -516,7 +522,7 @@
         </div>
 
         <div class="col">
-          <section class="col-8 mx-auto" >
+          <section class="col-8 mx-auto">
             <label for="exampleDataList" class="form-label"
               >COR DOS OLHOS</label
             >
@@ -546,10 +552,8 @@
     <div class="container text-center">
       <div class="row">
         <div class="col">
-          <section class="col-8 mx-auto" >
-            <label for="exampleDataList" class="form-label"
-              >É CASTRADO?</label
-            >
+          <section class="col-8 mx-auto">
+            <label for="exampleDataList" class="form-label">É CASTRADO?</label>
             <input
               class="form-control"
               list="datalistOptionsCastrado"
@@ -564,7 +568,7 @@
         </div>
 
         <div class="col">
-          <section class="col-8 mx-auto" >
+          <section class="col-8 mx-auto">
             <label for="exampleDataList" class="form-label"
               >QUAL O GÊNERO?</label
             >
@@ -603,8 +607,7 @@
 
     <section class="mx-auto my-2 p-3">
       <div class="row">
-        <div class="col">
-        </div>
+        <div class="col"></div>
       </div>
     </section>
 
@@ -625,41 +628,52 @@
       </div>
     </section>
 
-    <section class=my-5 ></section>
+    <section class="my-5"></section>
 
     <div class="col-20 text-center">
-      <button class="btn btn-primary" onclick="cadastroPetUsuario()">Enviar</button>
+      <button class="btn btn-primary" onclick="cadastroPetUsuario()">
+        Enviar
+      </button>
     </div>
 
     <!--Fim registro-->
 
-    <section class=my-5 ></section> <!--espaço-->
+    <section class="my-5"></section>
+    <!--espaço-->
 
     <!--Rodapé-->
-     <section class="w-100 bg-dark">
-       <footer>
-           <div class="row">
-               <div class="col-10 mx-auto">
-                   <div class="row">
-                       <div class="col-sm-3 text-light">LOGO</div>
-                       <div class="col-sm-9 text-light">
-                           <h2>Encontre seu melhor amigo novamente.</h2>
-                           <h4>Cadastre seu animal perdido e ajude a trazê-lo de volta para casa.</h4>
-                           <h4>Juntos podemos encontrar os animais perdidos e dar-lhes um final feliz.</h4>
-                       </div>
-                   </div>
-               </div>
-           </div>
-       </footer>
-   </section>
-   <!--Fim rodapé-->
+    <section class="w-100 bg-dark">
+      <footer>
+        <div class="row">
+          <div class="col-10 mx-auto">
+            <div class="row">
+              <div class="col-sm-3 text-light">LOGO</div>
+              <div class="col-sm-9 text-light">
+                <h2>Encontre seu melhor amigo novamente.</h2>
+                <h4>
+                  Cadastre seu animal perdido e ajude a trazê-lo de volta para
+                  casa.
+                </h4>
+                <h4>
+                  Juntos podemos encontrar os animais perdidos e dar-lhes um
+                  final feliz.
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!--Fim rodapé-->
 
-       <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -673,43 +687,64 @@
     <script type="text/javascript">
       function cadastroPetUsuario() {
         // body...
-        var status = document.getElementById('status');
-        var nomePet = document.getElementById('nomePet');
-        var especie = document.getElementById('especie');
-        var raca = document.getElementById('raca');
-        var porte = document.getElementById('porte');
-        var idade = document.getElementById('idade');
-        var pelo_cor = document.getElementById('pelo_cor');
-        var docil = document.getElementById('docil');
-        var chipado = document.getElementById('chipado');
-        var olhos_cor = document.getElementById('olhos_cor');
-        var castrado = document.getElementById('castrado');
-        var genero = document.getElementById('genero');
-        var observacoes = document.getElementById('observacoes');
-        
-        var imgPath = document.querySelector('input[type=file]').files[0];//('#inputGroupFile02');
+        var status = document.getElementById("status");
+        var nomePet = document.getElementById("nomePet");
+        var especie = document.getElementById("especie");
+        var raca = document.getElementById("raca");
+        var porte = document.getElementById("porte");
+        var idade = document.getElementById("idade");
+        var pelo_cor = document.getElementById("pelo_cor");
+        var docil = document.getElementById("docil");
+        var chipado = document.getElementById("chipado");
+        var olhos_cor = document.getElementById("olhos_cor");
+        var castrado = document.getElementById("castrado");
+        var genero = document.getElementById("genero");
+        var observacoes = document.getElementById("observacoes");
+
+        var imgPath = document.querySelector("input[type=file]").files[0]; //('#inputGroupFile02');
         var reader = new FileReader();
         // console.log(imgPath);
 
-        reader.addEventListener("load", function () {
+        reader.addEventListener(
+          "load",
+          function () {
             // convert image file to base64 string and save to localStorage
             localStorage.setItem("image", reader.result);
-        }, false);
+          },
+          false
+        );
 
         if (imgPath) {
-            reader.readAsDataURL(imgPath);
+          reader.readAsDataURL(imgPath);
         }
 
         // console.log(localStorage.getItem('image'));
 
-        cadastrado = AdicionarPetz({'status' : status.value,'nomePet' : nomePet.value,'especie' : especie.value,'raca' : raca.value,'porte' : porte.value,'idade' : idade.value,'pelo_cor' : pelo_cor.value,'docil' : docil.value,'chipado' : chipado.value,'olhos_cor' : olhos_cor.value,'castrado' : castrado.value,'genero' : genero.value,'observacoes' : observacoes.value, 'imgPath': localStorage.getItem('image')}, usuarioLogado);
-        if( cadastrado ){
-          window.location.replace('../MeusPetz/MeusPetz.html');
+        cadastrado = AdicionarPetz(
+          {
+            status: status.value,
+            nomePet: nomePet.value,
+            especie: especie.value,
+            raca: raca.value,
+            porte: porte.value,
+            idade: idade.value,
+            pelo_cor: pelo_cor.value,
+            docil: docil.value,
+            chipado: chipado.value,
+            olhos_cor: olhos_cor.value,
+            castrado: castrado.value,
+            genero: genero.value,
+            observacoes: observacoes.value,
+            imgPath: localStorage.getItem("image"),
+          },
+          usuarioLogado
+        );
+        if (cadastrado) {
+          window.location.replace("../MeusPetz/MeusPetz.html");
         }
 
         //Redirect
       }
     </script>
-
   </body>
 </html>
