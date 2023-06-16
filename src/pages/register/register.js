@@ -7,27 +7,3 @@ if (usuarioEstaLogado) {
 	document.getElementById('navbarSupportedContent').innerHTML = novo_navbar;
 }
 
-function updateRacas(especie) {
-	const racaInput = document.getElementById("raca");
-	const racaDatalist = document.getElementById("datalistOptionsRaca");
-	racaInput.value = "";
-	racaDatalist.innerHTML = "";
-
-	if (especie === "Gato") {
-	  racaDatalist.innerHTML = `
-		<option value="Persa"></option>
-		<option value="Siames"></option>
-		<option value="Maine Coon"></option>
-		<option value="Sphynx"></option>
-		<option value="Bengal"></option>
-	  `;
-	} else if (especie === "Cachorro") {
-	  racaDatalist.innerHTML = `
-		<option value="Labrador Retriever"></option>
-		<option value="Bulldog"></option>
-		<option value="Poodle"></option>
-		<option value="Golden Retriever"></option>
-		<option value="German Shepherd"></option>
-	  `;
-	}
-  }
