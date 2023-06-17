@@ -53,14 +53,21 @@ elem.innerHTML = newHtml;
 
 
 //Lista todos os petz desaparecidos précadastrados( esta lista não sofre interferência do usuário)
-var listaAnimaisGenericos = null;
+var listaAnimaisGenericos = [];
 fetch('../../../data/petz.txt')
   .then(response => response.text())
   .then(text => {
 
-	  listaAnimaisGenericos = JSON.parse(text).petz;
-	  console.log(listaAnimaisGenericos);
-	  console.log(listaAnimaisGenericos[0]);
+	  todosAnimais = JSON.parse(text).petz;
+	  for (var i = Object.keys(todosAnimais).length - 1; i >= 0; i--) {
+	  	if (todosAnimais[i].especie == usuarioPetz[0].especie) {
+	  		listaAnimaisGenericos.push(todosAnimais[i]);
+	  		console.log(listaAnimaisGenericos);
+	  	}
+	  		console.log(todosAnimais[i]);
+	  		console.log(listaAnimaisGenericos);
+	  }
+	  // console.log(listaAnimaisGenericos[0]);
 
 		var elemList = document.querySelector('#colunaAnimalListaGenerico');
 	  newHtml = ' ';//row
