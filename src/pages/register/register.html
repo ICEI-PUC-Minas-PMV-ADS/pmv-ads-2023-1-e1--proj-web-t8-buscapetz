@@ -154,34 +154,25 @@
         <div class="col">
           <section class="col-8 mx-auto">
             <label for="especie" class="form-label">ESPÉCIE</label>
-            <input
-              class="form-control"
-              list="datalistOptionsEspecie"
-              placeholder="Digite para pesquisar..."
-              id="especie"
-              onchange="updateRacas(this.value)"
-            />
+            <input class="form-control" list="datalistOptionsEspecie" placeholder="Digite para pesquisar..." id="especie"
+              onchange="updateRacas()" />
             <datalist id="datalistOptionsEspecie">
               <option value="Cachorro"></option>
               <option value="Gato"></option>
             </datalist>
           </section>
         </div>
-    
+  
         <div class="col">
           <section class="col-8 mx-auto">
             <label for="raca" class="form-label">RAÇA</label>
-            <input
-              class="form-control"
-              list="datalistOptionsRaca"
-              placeholder="Digite para pesquisar..."
-              id="raca"
-            />
+            <input class="form-control" list="datalistOptionsRaca" placeholder="Digite para pesquisar..." id="raca" />
             <datalist id="datalistOptionsRaca"></datalist>
           </section>
         </div>
       </div>
     </div>
+  
     
 <!-- Lista de raças em js-->
 

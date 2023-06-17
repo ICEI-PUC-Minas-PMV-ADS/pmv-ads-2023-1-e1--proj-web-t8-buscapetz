@@ -8,14 +8,15 @@ if (usuarioEstaLogado) {
 }
 
 
-function updateRacas(especie) {
+function updateRacas() {
+	const especieInput = document.getElementById("especie");
 	const racaInput = document.getElementById("raca");
 	const racaDatalist = document.getElementById("datalistOptionsRaca");
 	racaInput.value = "";
 	racaDatalist.innerHTML = "";
 
-	if (especie === "Gato") {
-		racaDatalist.innerHTML = `
+	if (especieInput.value === "Gato") {
+	  racaDatalist.innerHTML = `
 	  <option value="Abissínio">Abissínio</option>
 	  <option value="American Bobtail">American Bobtail</option>
 	  <option value="American Curl">American Curl</option>
@@ -118,9 +119,9 @@ function updateRacas(especie) {
 		<option value="Usuri">Usuri</option>
 		<option value="Van Turco">Van Turco</option>
 		<option value="Vankedisi">Vankedisi</option>
-	`;
-	} else if (especie === "Cachorro") {
-		racaDatalist.innerHTML = `
+		`;
+	} else if (especieInput.value === "Cachorro") {
+	  racaDatalist.innerHTML = `
 	  <option value="Afegão Hound">Afegão Hound</option>
 	  <option value="Affenpinscher">Affenpinscher</option>
 	  <option value="Airedale Terrier">Airedale Terrier</option>
