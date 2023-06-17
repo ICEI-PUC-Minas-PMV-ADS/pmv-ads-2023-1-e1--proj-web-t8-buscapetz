@@ -8,7 +8,7 @@ if (usuarioEstaLogado) {
 	
 	novo_navbar = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n" +
                 "  <div class=\"container-fluid\">\n" +
-                "      <a class=\"navbar-brand\" href=\"index.html\">Busca Petz</a>\n" +
+                "      <a class=\"navbar-brand\" href=\"../../index.html\">Busca Petz</a>\n" +
                 "      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\"\n" +
                 "          data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\"\n" +
                 "          aria-label=\"Toggle navigation\">\n" +
@@ -20,7 +20,7 @@ if (usuarioEstaLogado) {
                 "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../../index.html#FAQ\">FAQ</a>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item\">\n" +
-                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../src/pages/register/register.html\">Registro</a>\n" +
+                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../register/register.html\">Registro</a>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item dropdown\">\n" +
                 "                  <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" id=\"navbarDropdown\" role=\"button\"\n" +
@@ -28,19 +28,19 @@ if (usuarioEstaLogado) {
                 "                      Listas\n" +
                 "                  </a>\n" +
                 "                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/encontrados.html\">Petz Encontrados</a></li>\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/perdidos.html\">Petz Perdidos</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../listas/encontrados.html\">Petz Encontrados</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../listas/perdidos.html\">Petz Perdidos</a></li>\n" +
                 "                      <li>\n" +
                 "                          <hr class=\"dropdown-divider\">\n" +
                 "                      </li>\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/adocao.html\">Adoção</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../listas/adocao.html\">Adoção</a></li>\n" +
                 "                  </ul>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item\">\n" +
-                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../src/pages/chat/chat.html\">Chat</a>\n" +
+                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../chat/chat.html\">Chat</a>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item\">\n" +
-                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../src/pages/MeusPetz/MeusPetz.html\">Meus Petz</a>\n" +
+                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../MeusPetz/MeusPetz.html\">Meus Petz</a>\n" +
                 "              </li>\n" +
                 "          </ul>\n" +
                 "\t\t  <ul class=\"nav-link active ms-auto list-unstyled\">\n" +
@@ -50,8 +50,8 @@ if (usuarioEstaLogado) {
                 "                      \n" +
                 "                  </a>\n" +
                 "                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/usuario/usuario.html\">Meu Perfil</a></li>\n" +
-                "                      <li><a class=\"dropdown-item\" onclick=\"deslogar()\" href=\"index.html\">Deslogar</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../usuario/usuario.html\">Meu Perfil</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" onclick=\"deslogar()\" href=\"../../index.html\">Deslogar</a></li>\n" +
                 "                  </ul>\n" +
                 "              </li>\n" +
                 "\t\t  </ul>\n" +

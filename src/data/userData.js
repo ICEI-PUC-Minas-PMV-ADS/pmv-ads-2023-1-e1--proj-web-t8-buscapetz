@@ -96,3 +96,7 @@ function checkLogedUser(){
   }
   return true;
 }
+
+function deslogar(){
+  localStorage.removeItem("usuarioLogado");
+}
