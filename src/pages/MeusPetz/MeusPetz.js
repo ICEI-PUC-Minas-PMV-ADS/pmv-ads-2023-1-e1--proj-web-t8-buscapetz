@@ -45,8 +45,8 @@ newHtml = '   <div class="row align-items-start">';//row
 		newHtml +='               <button type="button" class="btn btn-info mx-1 my-1">' + petzAtual['chipado'] + '</button>';
 		newHtml +='               <button type="button" class="btn btn-info mx-1 my-1">' + petzAtual['castrado'] + '</button>';
 		newHtml +='               <button type="button" class="btn btn-info mx-1 my-1">' + petzAtual['docil'] + '</button>';
-		newHtml +='               <button type="button" class="btn btn-info mx-1 my-1">' + petzAtual['ganero'] + '</button>';
-		newHtml +='               <section class="my-3"><a href="./comparacao/comparacao.html" class="btn btn-primary">COMPARE</a></section>';
+		newHtml +='               <button type="button" class="btn btn-info mx-1 my-1">' + petzAtual['genero'] + '</button>';
+		newHtml +='               <section class="my-3"><a href="./comparacao/comparacao.html?petSelecionadoPeloUsuario='+ petzAtual['nomePet'] +'" class="btn btn-primary">COMPARE</a></section>';
 		newHtml +='             </div>';
 		newHtml +='           </div>';
 		newHtml +='         </div>';
