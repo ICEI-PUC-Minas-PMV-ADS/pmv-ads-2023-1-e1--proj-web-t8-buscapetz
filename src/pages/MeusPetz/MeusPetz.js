@@ -5,7 +5,6 @@ console.log(usuarioPetz);
 
 var newHtml = '<div class="row align-items-start">'; //row
 petzEncontrados = [];
-
 for (var i = usuarioPetz.length - 1; i >= 0; i--) {
   console.log(usuarioPetz[i]);
   var petzAtual = usuarioPetz[i];
@@ -55,3 +54,4 @@ for (var i = usuarioPetz.length - 1; i >= 0; i--) {
 
 newHtml += "</div>"; //row
 
+elem.innerHTML = newHtml;
