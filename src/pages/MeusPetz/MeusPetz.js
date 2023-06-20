@@ -41,7 +41,7 @@ for (var i = usuarioPetz.length - 1; i >= 0; i--) {
                 <div class="col-6 col-sm-6 mx-auto">
                   <div class="d-flex justify-content-between">
                     <section class="my-3"><a href="./comparacao/comparacao.html?petSelecionadoPeloUsuario=${petzAtual['nomePet']}" class="btn btn-primary">COMPARE</a></section>
-                    <section class="my-3"><a href="./register/register.html?petSelecionadoPeloUsuario=${petzAtual['nomePet']}" class="btn btn-primary">EDITAR</a></section>
+                    <section class="my-3"><a href="../register/EditAnimal.html?petSelecionadoPeloUsuario=${petzAtual['nomePet']}" class="btn btn-primary">EDITAR</a></section>
                   </div>
                 </div>
               </div>
