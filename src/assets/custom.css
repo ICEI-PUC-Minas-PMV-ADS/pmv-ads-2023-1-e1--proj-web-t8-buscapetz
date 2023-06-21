@@ -59,3 +59,11 @@
 .bg-purple-90{
     background-color: #6f42c1E1;
 }
+
+
+.logo-footer{
+    max-height: 200px;
+}
+.logo-header{
+    max-height: 100px;
+}
