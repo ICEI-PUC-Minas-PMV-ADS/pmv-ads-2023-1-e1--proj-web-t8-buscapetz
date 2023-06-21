@@ -74,7 +74,7 @@ function Editar(){
     Bairro    : document.getElementById('Bairro').value,
     Cidade    : document.getElementById('Cidade').value,
     password  : document.getElementById('password').value,
-    gender    : document.getElementById('gender').value
+    gender    : document.querySelector('input[name="gender"]:checked').value
     });//Altera o item selecionado na tabela
   console.log(tbUsuario[indice]);
   //usuarioEditado = localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
