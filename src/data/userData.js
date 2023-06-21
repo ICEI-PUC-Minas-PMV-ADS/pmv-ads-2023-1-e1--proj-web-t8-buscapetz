@@ -49,23 +49,43 @@ function RecuperarUsuario(usuarioInfo){
 
 }
 
-function Editar(indice_selecionado){
-  tbUsuario[indice_selecionado] = JSON.stringify({
-    firstname : usuario['firstname'],
-    lastname  : usuario['lastname'],
-    email     : usuario['email'],
-    tel       : usuario['tel'],
-    adress    : usuario['adress'],
-    number    : usuario['number'],
-    Bairro    : usuario['Bairro'],
-    Cidade    : usuario['Cidade'],
-    password  : usuario['password'],
-    gender    : usuario['gender']
+function Editar(){
+  var indice;
+  for (var i = tbUsuario.length - 1; i >= 0; i--) {
+    var usuario = JSON.parse(tbUsuario[i]);
+    console.log(usuario);
+    if (usuario.firstname == usuarioLogado.firstname) {
+      console.log("usuario encontrado");
+      indice=i;
+    }
+    if (usuario.email == usuarioLogado.email) {
+      console.log("usuario encontrado");
+      indice=i;
+    }
+  }
+
+  tbUsuario[indice] = JSON.stringify({
+    firstname : document.getElementById('firstname').value,
+    lastname  : document.getElementById('lastname').value,
+    email     : document.getElementById('email').value,
+    tel       : document.getElementById('tel').value,
+    adress    : document.getElementById('adress').value,
+    number    : document.getElementById('number').value,
+    Bairro    : document.getElementById('Bairro').value,
+    Cidade    : document.getElementById('Cidade').value,
+    password  : document.getElementById('password').value,
+    gender    : document.getElementById('gender').value
     });//Altera o item selecionado na tabela
-  // console.log(tbUsuario);
-  usuarioEditado = localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
+  console.log(tbUsuario[indice]);
+  //usuarioEditado = localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
   console.log("Informações editadas.");
-  console.log(usuarioEditado);
+  localStorage.removeItem("tbUsuario");
+  localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
+  localStorage.removeItem("usuarioLogado");
+  localStorage.setItem("usuarioLogado", JSON.stringify(JSON.parse(tbUsuario[indice])));
+  console.log(indice);
+  //localStorage.removeItem();
+  //localStorage.setItem("usuarioLogado",JSON.stringify(tbUsuario));
   // operacao = "A"; //Volta ao padrão
   return true;
 }

@@ -37,9 +37,6 @@ if (usuarioEstaLogado) {
                 "                  </ul>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item\">\n" +
-                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../src/pages/chat/chat.html\">Chat</a>\n" +
-                "              </li>\n" +
-                "              <li class=\"nav-item\">\n" +
                 "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../src/pages/MeusPetz/MeusPetz.html\">Meus Petz</a>\n" +
                 "              </li>\n" +
                 "          </ul>\n" +
