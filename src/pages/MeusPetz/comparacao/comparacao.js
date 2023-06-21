@@ -37,6 +37,7 @@ newHtml = ' ';//row
   newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + usuarioPetz[0].raca + '</button>';
   newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + usuarioPetz[0].porte + '</button>';
   newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + usuarioPetz[0].idade + '</button>';
+  newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + usuarioPetz[0].pelo_cor + '</button>';
   newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + usuarioPetz[0].olhos_cor + '</button>';
   newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + (usuarioPetz[0].chipado == "Não" ? "Não " :"" ) + 'Possui chip</button>';
   newHtml += '                          <button type="button" class="btn btn-info mx-1 my-1">' + (usuarioPetz[0].castrado == "Não" ? "Não é " :"" ) + 'Castrado</button>';
@@ -92,7 +93,7 @@ fetch('../../../data/petz.txt')
       newHtml += '                      <!-- Foto(s) -->';
       newHtml += '                      <div class="col-sm-10 mx-auto">';
       newHtml += '                          <div class="mx-auto w-100" style="max-height: 400px;">';
-      newHtml += '                              <img src="' + ( eachPetlistItem.imgPath ? eachPetlistItem.imgPath : "https://placehold.co/500" ) + '" class="img-thumbnail rounded d-block mx-auto" alt="...">';
+      newHtml += '                              <img src="' + ( eachPetlistItem.imgPath ? ("../../../assets/imgs/" + eachPetlistItem.imgPath) : "https://placehold.co/500" ) + '" class="img-thumbnail rounded d-block mx-auto" alt="...">';
       newHtml += '                          </div>';
       newHtml += '                      </div>';
       newHtml += '                  </div>';
@@ -109,6 +110,7 @@ fetch('../../../data/petz.txt')
       newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].raca == eachPetlistItem.raca ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + eachPetlistItem.raca + '</button>';
       newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].porte == eachPetlistItem.porte ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + eachPetlistItem.porte + '</button>';
       newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].idade == eachPetlistItem.idade ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + eachPetlistItem.idade + '</button>';
+      newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].pelo_cor == eachPetlistItem.pelo_cor ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + eachPetlistItem.pelo_cor + '</button>';
       newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].olhos_cor == eachPetlistItem.olhos_cor ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + eachPetlistItem.olhos_cor + '</button>';
       newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].chipado == eachPetlistItem.chipado ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + (eachPetlistItem.chipado == "Não" ? "Não " :"" ) + 'Possui chip</button>';
       newHtml += '                              <button type="button" class="btn  ' + (usuarioPetz[0].castrado == eachPetlistItem.castrado ? "btn-info" : "btn-secondary") + ' mx-1 my-1">' + (eachPetlistItem.castrado == "Não" ? "Não é " :"" ) + 'Castrado</button>';
