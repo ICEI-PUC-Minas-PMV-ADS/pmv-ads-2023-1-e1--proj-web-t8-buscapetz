@@ -28,8 +28,16 @@ if(tbPetz == null || tbPetz == undefined){
 function AdicionarPetz(petz, usuario){
   // console.log(petz);
   // console.log(usuario);
+  var id;
+  
+  if(tbPetz == 0)
+    id = 1
+  else
+    id = JSON.parse(tbPetz[tbPetz.length - 1]).id + 1;
+
   var novoPetz = JSON.stringify({
-  	user_name   : usuario['firstname'],
+    user_name   : usuario['firstname'],
+    id          : id,
     status      : petz['status'],
     nomePet     : petz['nomePet'],
     especie     : petz['especie'],
@@ -87,16 +95,13 @@ function ListarPetz(PetzInfo){
   }
   return petzEncontrados;
 }
-
-function Get_Petty(PetzName){
-  return tbPetz.findIndex(x => x.nomePet === PetzName);
-}
  
 function Editar(Petz){
-  var index = Get_Petty(Petz['nomePet']);
+  var tbPet = JSON.parse(tbPetz);
+  var pet = tbPet.find(x => x.id == Petz.id)
 
-  if(index != null && index != undefined ){
-    tbPetz[index] = JSON.stringify({
+  if(pet != null){
+      pet = JSON.stringify({
       status      : Petz['status'],
       especie     : Petz['especie'],
       raca        : Petz['raca'],
@@ -111,7 +116,7 @@ function Editar(Petz){
       observacoes : Petz['observacoes'],
     });//Altera o item selecionado na tabela
     // console.log(tbPetz);
-    PetzEditado = localStorage.setItem("tbPetz", JSON.stringify(tbPetz));
+    PetzEditado = localStorage.setItem("tbPetz", JSON.stringify(tbPet));
     console.log("Informações editadas.");
     console.log(PetzEditado);
     
