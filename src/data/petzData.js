@@ -88,25 +88,37 @@ function ListarPetz(PetzInfo){
   return petzEncontrados;
 }
 
-function Editar(indice_selecionado){
-  tbPetz[indice_selecionado] = JSON.stringify({
-    firstname : Petz['firstname'],
-    lastname  : Petz['lastname'],
-    email     : Petz['email'],
-    tel       : Petz['tel'],
-    adress    : Petz['adress'],
-    number    : Petz['number'],
-    Bairro    : Petz['Bairro'],
-    Cidade    : Petz['Cidade'],
-    password  : Petz['password'],
-    gender    : Petz['gender']
+function Get_Petty(PetzName){
+  return tbPetz.findIndex(x => x.nomePet === PetzName);
+}
+ 
+function Editar(Petz){
+  var index = Get_Petty(Petz['nomePet']);
+
+  if(index != null && index != undefined ){
+    tbPetz[index] = JSON.stringify({
+      status      : Petz['status'],
+      especie     : Petz['especie'],
+      raca        : Petz['raca'],
+      porte       : Petz['porte'],
+      idade       : Petz['idade'],
+      pelo_cor    : Petz['pelo_cor'],
+      docil       : Petz['docil'],
+      chipado     : Petz['chipado'],
+      olhos_cor   : Petz['olhos_cor'],
+      castrado    : Petz['castrado'],
+      genero      : Petz['genero'],
+      observacoes : Petz['observacoes'],
     });//Altera o item selecionado na tabela
-  // console.log(tbPetz);
-  PetzEditado = localStorage.setItem("tbPetz", JSON.stringify(tbPetz));
-  console.log("Informações editadas.");
-  console.log(PetzEditado);
-  // operacao = "A"; //Volta ao padrão
-  return true;
+    // console.log(tbPetz);
+    PetzEditado = localStorage.setItem("tbPetz", JSON.stringify(tbPetz));
+    console.log("Informações editadas.");
+    console.log(PetzEditado);
+    
+    return true;
+  }
+
+  return false;
 }
 
 function ExcluirPetz(indice_selecionado){
@@ -114,9 +126,6 @@ function ExcluirPetz(indice_selecionado){
   localStorage.setItem("tbPetz", JSON.stringify(tbPetz));
   console.log("Registro excluído.");
 }
-
-
-
 
 //Imagens
 function getBase64Image(img) {
