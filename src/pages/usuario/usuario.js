@@ -8,9 +8,10 @@ if (usuarioLogado) {
 	document.getElementById('adress').value = usuarioLogado['adress'];
 	document.getElementById('number').value = usuarioLogado['number'];
 	document.getElementById('Bairro').value = usuarioLogado['Bairro'];
+	document.getElementById('CEP').value = usuarioLogado['CEP'];
 	document.getElementById('Cidade').value = usuarioLogado['Cidade'];
 	document.getElementById('password').value = usuarioLogado['password'];
-	document.getElementById('confirmPassword').value = usuarioLogado['confirmPassword'];
+	document.getElementById('confirmPassword').value = usuarioLogado['password'];
 	console.log(usuarioLogado['gender']);
 	switch(usuarioLogado['gender']){
 		case 'feminino':

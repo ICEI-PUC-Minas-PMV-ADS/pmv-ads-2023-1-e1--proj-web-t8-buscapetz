@@ -21,10 +21,18 @@ function AdicionarUsuario(usuario){
     adress    : usuario['adress'],
     number    : usuario['number'],
     Bairro    : usuario['Bairro'],
+    CEP       : usuario['CEP'],
     Cidade    : usuario['Cidade'],
     password  : usuario['password'],
     gender    : usuario['gender']
   });
+
+  if(validatePassword()){
+    console.log("senhas :" + false)
+    return;
+
+  }
+
   console.log(novoUsuario);
   tbUsuario.push(novoUsuario);
   localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
@@ -72,10 +80,18 @@ function Editar(){
     adress    : document.getElementById('adress').value,
     number    : document.getElementById('number').value,
     Bairro    : document.getElementById('Bairro').value,
+    CEP       : document.getElementById('CEP').value,
     Cidade    : document.getElementById('Cidade').value,
     password  : document.getElementById('password').value,
     gender    : document.querySelector('input[name="gender"]:checked').value
     });//Altera o item selecionado na tabela
+  
+    if(validatePassword()){
+      console.log("senhas :" + false)
+      return;
+
+    }
+
   console.log(tbUsuario[indice]);
   //usuarioEditado = localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
   console.log("Informações editadas.");
@@ -84,6 +100,8 @@ function Editar(){
   localStorage.removeItem("usuarioLogado");
   localStorage.setItem("usuarioLogado", JSON.stringify(JSON.parse(tbUsuario[indice])));
   console.log(indice);
+  
+ 
   //localStorage.removeItem();
   //localStorage.setItem("usuarioLogado",JSON.stringify(tbUsuario));
   // operacao = "A"; //Volta ao padrão
@@ -119,4 +137,16 @@ function checkLogedUser(){
 
 function deslogar(){
   localStorage.removeItem("usuarioLogado");
+}
+
+function validatePassword() {
+  var password = document.getElementById("password").value;
+  var confirmPassword = document.getElementById("confirmPassword").value;
+
+  if (password !== confirmPassword) {
+      // Passwords do not match
+      alert("A senha confirmada não é igual a senha digitada!");
+      return true;
+  } 
+  return false;
 }

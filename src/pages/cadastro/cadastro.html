@@ -74,13 +74,16 @@
                         <label for="number">Cidade</label>
                         <input id="Cidade" type="text" name="Cidade" placeholder="Ex: Belo Horizonte" required>                                        
                     </div>
-                
+                    
+                    <div class="input-box">
+                        <label for="text">CEP</label>
+                        <input id="CEP" type="text" name="CEP" placeholder="Ex: 55600-000" required>                                        
+                    </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
                         <input id="password" type="password" name="password" placeholder="********" required>
                     </div>
-
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
@@ -171,12 +174,13 @@
             var adress = document.getElementById('adress');
             var number = document.getElementById('number');
             var Bairro = document.getElementById('Bairro');
+            var CEP = document.getElementById('CEP');
             var Cidade = document.getElementById('Cidade');
             var password = document.getElementById('password');
             var confirmPassword = document.getElementById('confirmPassword');
             var gender = document.querySelector('input[name="gender"]:checked');
             console.log(firstname.value,lastname.value,email.value,tel.value,adress.value,number.value,Bairro.value,Cidade.value,password.value,gender.value);
-            cadastrado = AdicionarUsuario({'firstname': firstname.value,'lastname': lastname.value,'email': email.value,'tel': tel.value,'adress': adress.value,'number': number.value,'Bairro': Bairro.value,'Cidade': Cidade.value,'password': password.value,'gender': gender.value});
+            cadastrado = AdicionarUsuario({'firstname': firstname.value,'lastname': lastname.value,'email': email.value,'tel': tel.value,'adress': adress.value,'number': number.value,'Bairro': Bairro.value, 'CEP' : CEP.value, 'Cidade': Cidade.value,'password': password.value,'gender': gender.value});
             console.log(cadastrado);
             if( cadastrado ){
                 window.location.replace('../login/login.html');

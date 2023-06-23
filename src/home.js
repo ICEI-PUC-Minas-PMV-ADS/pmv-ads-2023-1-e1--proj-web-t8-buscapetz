@@ -17,9 +17,6 @@ if (usuarioEstaLogado) {
                 "      <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">\n" +
                 "          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n" +
                 "              <li class=\"nav-item\">\n" +
-                "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../../index.html#FAQ\">FAQ</a>\n" +
-                "              </li>\n" +
-                "              <li class=\"nav-item\">\n" +
                 "                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../src/pages/register/register.html\">Registro</a>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item dropdown\">\n" +
@@ -76,11 +73,6 @@ if (usuarioEstaLogado) {
               "\n" +
               "        <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContentBasic\">\n" +
               "          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">\n" +
-              "            <li class=\"nav-item\">\n" +
-              "              <a class=\"nav-link active\" aria-current=\"page\" href=\"#FAQ\"\n" +
-              "                >FAQ</a\n" +
-              "              >\n" +
-              "            </li>\n" +
               "          </ul>\n" +
               "          <a\n" +
               "            class=\"nav-link active ms-auto\"\n" +
