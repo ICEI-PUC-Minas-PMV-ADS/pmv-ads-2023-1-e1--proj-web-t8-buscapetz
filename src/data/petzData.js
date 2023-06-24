@@ -14,6 +14,10 @@ genero
 observacoes
 */
 
+const PERDIDOS = 1;
+const ENCONTRADOS = 2;
+const ADOCAO = 3;
+
 // Variaveis globais
 var tbPetz = localStorage.getItem("tbPetz");
 tbPetz = JSON.parse(tbPetz); 
@@ -84,17 +88,21 @@ function ListarPetz(PetzInfo){
   petzEncontrados = [];
   for (var i = tbPetz.length - 1; i >= 0; i--) {
     var Petz = JSON.parse(tbPetz[i]);
+    if (PetzInfo == null || PetzInfo == undefined) { petzEncontrados.push(Petz);continue;}
     if (Petz.user_name == PetzInfo) {
       console.log("Petz encontrado");
       petzEncontrados.push(Petz);
+      continue;
     }
     if (Petz.nomePet == PetzInfo) {
       console.log("Petz encontrado");
       petzEncontrados.push(Petz);
+      continue;
     }
     if (Petz.status == PetzInfo) {
       console.log("Petz encontrado");
       petzEncontrados.push(Petz);
+      continue;
     }
   }
   return petzEncontrados;
