@@ -8,6 +8,7 @@
 	<!-- Add Bootstrap stylesheet -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 	<style>
 		.list-group-item {
 			display: flex;
@@ -15,7 +16,7 @@
 			align-items: center;
 			text-align: center;
 		}
-		img {
+		.list-group-item img {
 			width: 200px;
 			height: 200px;
 			object-fit: cover;
@@ -33,6 +34,8 @@
 			margin-bottom: 20px; /* added margin */
 		}
 	</style>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/custom.css">
 </head>
 <body>
 
@@ -380,18 +383,37 @@
 
 <section class="w-100 bg-dark">
   <footer>
-      <div class="row">
-          <div class="col-10 mx-auto">
-              <div class="row">
-                  <div class="col-sm-3 text-light">LOGO</div>
-                  <div class="col-sm-9 text-light">
-                      <h2>Encontre seu melhor amigo novamente.</h2>
-                      <h4>Cadastre seu animal perdido e ajude a trazê-lo de volta para casa.</h4>
-                      <h4>Juntos podemos encontrar os animais perdidos e dar-lhes um final feliz.</h4>
+          <div class="row w-100 pb-3">
+              <div class="col-10 mx-auto">
+                  <div class="row">
+                      <div class="col-sm-3 text-light">
+                        <img src="../../assets/imgs/BuscaPetzFooter.png" class="logo-footer">
+                      </div>
+                      <div class="col-sm-3 text-light">
+                        <h2>&nbsp;</h2>
+                        <p>
+                          <a href="./index.html#FAQ" class="text-white">FAQ</a>
+                        </p>
+                        <p>
+                          <a href="../src/pages/register/register.html" class="text-white">Registro</a>
+                        </p>
+                        <p>
+                          <a href="#" class="text-white">Chat</a>
+                        </p>
+                        <p>
+                          <a href="../src/pages/MeusPetz/MeusPetz.html" class="text-white">Meus Petz</a>
+                        </p>
+                      </div>
+                      <div class="col-sm-6 text-light">
+                          <h2>&nbsp;</h2>
+                          <h3>Encontre seu melhor amigo novamente.</h3>
+                          <h5>Cadastre seu animal perdido e ajude a trazê-lo de volta para casa.</h5>
+                          <h5>Juntos podemos encontrar os animais perdidos e dar-lhes um final feliz.</h5>
+                      </div>
                   </div>
               </div>
           </div>
-      </div>
+          <div class="row w-100 py-1 m-0 bg-secondary"><small class="text-center text-small text-white ">Todos os direitos reservados</small></div>
   </footer>
 </section>
 

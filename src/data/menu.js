@@ -8,7 +8,7 @@ if (usuarioEstaLogado) {
 	
 	novo_navbar = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n" +
                 "  <div class=\"container-fluid\">\n" +
-                "      <a class=\"navbar-brand\" href=\"../../index.html\">Busca Petz</a>\n" +
+                "      <a class=\"navbar-brand\" href=\"../../index.html\"><img src='../../assets/imgs/BuscaPetzHeader.png' class='logo-header'>Busca Petz</a>\n" +
                 "      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\"\n" +
                 "          data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\"\n" +
                 "          aria-label=\"Toggle navigation\">\n" +
