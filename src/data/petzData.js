@@ -92,6 +92,10 @@ function ListarPetz(PetzInfo){
       console.log("Petz encontrado");
       petzEncontrados.push(Petz);
     }
+    if (Petz.status == PetzInfo) {
+      console.log("Petz encontrado");
+      petzEncontrados.push(Petz);
+    }
   }
   return petzEncontrados;
 }
