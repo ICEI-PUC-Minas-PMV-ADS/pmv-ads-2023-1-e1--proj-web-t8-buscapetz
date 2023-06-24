@@ -8,7 +8,7 @@ if (usuarioEstaLogado) {
 	
 	novo_navbar = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n" +
                 "  <div class=\"container-fluid\">\n" +
-                "      <a class=\"navbar-brand\" href=\"../../index.html\">Busca Petz</a>\n" +
+                "      <a class=\"navbar-brand\" href=\"../../index.html\"><img src='../../assets/imgs/BuscaPetzHeader.png' class='logo-header'>Busca Petz</a>\n" +
                 "      <button class=\"navbar-toggler\" type=\"button\" data-bs-toggle=\"collapse\"\n" +
                 "          data-bs-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\" aria-expanded=\"false\"\n" +
                 "          aria-label=\"Toggle navigation\">\n" +
@@ -25,12 +25,12 @@ if (usuarioEstaLogado) {
                 "                      Listas\n" +
                 "                  </a>\n" +
                 "                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../listas/encontrados.html\">Petz Encontrados</a></li>\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../listas/perdidos.html\">Petz Perdidos</a></li>\n" +
+                "                      <a class=\"dropdown-item\" href=\"../listas/encontrados.html\"><li><i class=\"fa-solid fa-magnifying-glass-plus\"></i>&nbsp;&nbsp;&nbsp;Petz Encontrados</a></li>\n" +
+                "                      <a class=\"dropdown-item\" href=\"../listas/perdidos.html\"><li><i class=\"fa-solid fa-magnifying-glass-location\"></i>&nbsp;&nbsp;&nbsp;Petz Perdidos</a></li>\n" +
                 "                      <li>\n" +
                 "                          <hr class=\"dropdown-divider\">\n" +
                 "                      </li>\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../listas/adocao.html\">Adoção</a></li>\n" +
+                "                      <a class=\"dropdown-item\" href=\"../listas/adocao.html\"><li><i class=\"fa-solid fa-heart-circle-plus\"></i>&nbsp;&nbsp;&nbsp;Adoção</a></li>\n" +
                 "                  </ul>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item\">\n" +
