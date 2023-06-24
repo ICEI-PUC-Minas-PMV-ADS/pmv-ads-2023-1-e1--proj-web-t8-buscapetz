@@ -30,9 +30,7 @@
                     <div class="title">
                         <h1 style="font-size: 2em;font-weight: 700;">Dados Pessoais</h1>
                     </div>
-                    <div class="login-button">
-                        <button><a href="#">Editar Perfil</a></button>
-                    </div>
+                    
                 </div>
 
                 <div class="input-group">
@@ -74,7 +72,11 @@
                         <label for="number">Cidade</label>
                         <input id="Cidade" type="text" name="Cidade" placeholder="Belo Horizonte" required>                                        
                     </div>
-                
+                    
+                    <div class="input-box">
+                        <label for="text">CEP</label>
+                        <input id="CEP" type="text" name="CEP" placeholder="Ex: 55600-000" required>                                        
+                    </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
@@ -116,7 +118,7 @@
 
 
                 <div class="continue-button">
-                    <button><a href="#">Confirmar</a> </button>
+                    <button onclick="Editar()">Confirmar</button>
                 </div>
             </form>
         </div>

@@ -21,10 +21,18 @@ function AdicionarUsuario(usuario){
     adress    : usuario['adress'],
     number    : usuario['number'],
     Bairro    : usuario['Bairro'],
+    CEP       : usuario['CEP'],
     Cidade    : usuario['Cidade'],
     password  : usuario['password'],
     gender    : usuario['gender']
   });
+
+  if(validatePassword()){
+    console.log("senhas :" + false)
+    return;
+
+  }
+
   console.log(novoUsuario);
   tbUsuario.push(novoUsuario);
   localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
@@ -49,23 +57,53 @@ function RecuperarUsuario(usuarioInfo){
 
 }
 
-function Editar(indice_selecionado){
-  tbUsuario[indice_selecionado] = JSON.stringify({
-    firstname : usuario['firstname'],
-    lastname  : usuario['lastname'],
-    email     : usuario['email'],
-    tel       : usuario['tel'],
-    adress    : usuario['adress'],
-    number    : usuario['number'],
-    Bairro    : usuario['Bairro'],
-    Cidade    : usuario['Cidade'],
-    password  : usuario['password'],
-    gender    : usuario['gender']
+function Editar(){
+  var indice;
+  for (var i = tbUsuario.length - 1; i >= 0; i--) {
+    var usuario = JSON.parse(tbUsuario[i]);
+    console.log(usuario);
+    if (usuario.firstname == usuarioLogado.firstname) {
+      console.log("usuario encontrado");
+      indice=i;
+    }
+    if (usuario.email == usuarioLogado.email) {
+      console.log("usuario encontrado");
+      indice=i;
+    }
+  }
+
+  tbUsuario[indice] = JSON.stringify({
+    firstname : document.getElementById('firstname').value,
+    lastname  : document.getElementById('lastname').value,
+    email     : document.getElementById('email').value,
+    tel       : document.getElementById('tel').value,
+    adress    : document.getElementById('adress').value,
+    number    : document.getElementById('number').value,
+    Bairro    : document.getElementById('Bairro').value,
+    CEP       : document.getElementById('CEP').value,
+    Cidade    : document.getElementById('Cidade').value,
+    password  : document.getElementById('password').value,
+    gender    : document.querySelector('input[name="gender"]:checked').value
     });//Altera o item selecionado na tabela
-  // console.log(tbUsuario);
-  usuarioEditado = localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
+  
+    if(validatePassword()){
+      console.log("senhas :" + false)
+      return;
+
+    }
+
+  console.log(tbUsuario[indice]);
+  //usuarioEditado = localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
   console.log("Informações editadas.");
-  console.log(usuarioEditado);
+  localStorage.removeItem("tbUsuario");
+  localStorage.setItem("tbUsuario", JSON.stringify(tbUsuario));
+  localStorage.removeItem("usuarioLogado");
+  localStorage.setItem("usuarioLogado", JSON.stringify(JSON.parse(tbUsuario[indice])));
+  console.log(indice);
+  
+ 
+  //localStorage.removeItem();
+  //localStorage.setItem("usuarioLogado",JSON.stringify(tbUsuario));
   // operacao = "A"; //Volta ao padrão
   return true;
 }
@@ -99,4 +137,16 @@ function checkLogedUser(){
 
 function deslogar(){
   localStorage.removeItem("usuarioLogado");
+}
+
+function validatePassword() {
+  var password = document.getElementById("password").value;
+  var confirmPassword = document.getElementById("confirmPassword").value;
+
+  if (password !== confirmPassword) {
+      // Passwords do not match
+      alert("A senha confirmada não é igual a senha digitada!");
+      return true;
+  } 
+  return false;
 }
