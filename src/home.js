@@ -25,12 +25,12 @@ if (usuarioEstaLogado) {
                 "                      Listas\n" +
                 "                  </a>\n" +
                 "                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/encontrados.html\">Petz Encontrados</a></li>\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/perdidos.html\">Petz Perdidos</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/encontrados.html\"><i class=\"fa-solid fa-magnifying-glass-plus\"></i>&nbsp;&nbsp;&nbsp;Petz Encontrados</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/perdidos.html\"><i class=\"fa-solid fa-magnifying-glass-location\"></i>&nbsp;&nbsp;&nbsp;Petz Perdidos</a></li>\n" +
                 "                      <li>\n" +
                 "                          <hr class=\"dropdown-divider\">\n" +
                 "                      </li>\n" +
-                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/adocao.html\">Adoção</a></li>\n" +
+                "                      <li><a class=\"dropdown-item\" href=\"../src/pages/listas/adocao.html\"><i class=\"fa-solid fa-heart-circle-plus\"></i>&nbsp;&nbsp;&nbsp;Adoção</a></li>\n" +
                 "                  </ul>\n" +
                 "              </li>\n" +
                 "              <li class=\"nav-item\">\n" +

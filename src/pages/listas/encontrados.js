@@ -1,16 +1,9 @@
-//listas.js
-/*let usuarioEstaLogado = checkLogedUser();
-console.log(usuarioEstaLogado);
-if (usuarioEstaLogado) {
-	novo_navbar = "          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../../index.html#FAQ\">FAQ</a>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../register/register.html\">Registro</a>              </li>              <li class=\"nav-item dropdown\">                  <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" id=\"navbarDropdown\" role=\"button\"                      data-bs-toggle=\"dropdown\" aria-expanded=\"false\">                      Listas                  </a>                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">                      <li><a class=\"dropdown-item\" href=\"../listas/encontrados.html\">Petz Encontrados</a></li>                      <li><a class=\"dropdown-item\" href=\"../listas/perdidos.html\">Petz Perdidos</a></li>                      <li>                          <hr class=\"dropdown-divider\">                      </li>                      <li><a class=\"dropdown-item\" href=\"../listas/adocao.html\">Adoção</a></li>                  </ul>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../chat/chat.html\">Chat</a>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../MeusPetz/MeusPetz.html\">Meus Petz</a>              </li>          </ul>";
-	novo_navbar += "<a class=\"nav-link active\" href=\"./pages/usuario/usuario.html\" tabindex=\"-1\" aria-disabled=\"true\">"+usuarioLogado['firstname']+"</a>";
-	document.getElementById('navbarSupportedContent').innerHTML = novo_navbar;
-}*/
+//////////////Encontrados
 
-var elem = document.querySelector("#animais_cadastrados_perdidos");
+var elem_encontrados_user = document.querySelector("#animais_cadastrados_encontrados");
 var newHtml = '<div class="col-12">'; //row
 
-var usuarioPetz = ListarPetz(PERDIDOS);
+var usuarioPetz = ListarPetz(ENCONTRADOS);
 var petzEncontrados = [];
 
 newHtml += `<div class="row w-100 mx-0">`;     
@@ -63,7 +56,7 @@ for (var i = usuarioPetz.length - 1; i >= 0; i--) {
 
 newHtml += "</div>"; //row
 
-elem.innerHTML = newHtml;
+elem_encontrados_user.innerHTML = newHtml;
 
 
 //Lista inicial de animais
@@ -73,14 +66,14 @@ fetch('../../data/petz.txt')
   .then(text => {
 		  todosAnimais = JSON.parse(text).petz;
 		  for (var i = Object.keys(todosAnimais).length - 1; i >= 0; i--) {
-		  	if (todosAnimais[i].status == PERDIDOS) {
+		  	if (todosAnimais[i].status == ENCONTRADOS) {
 		  		inicialPetz.push(todosAnimais[i]);
 		  		console.log(inicialPetz);
 		  	}
 		  		console.log(todosAnimais[i]);
 		  		console.log(inicialPetz);
 		  }
-	var elem_iniciais = document.querySelector("#animais_perdidos_iniciais");
+	var elem_encontrados_iniciais = document.querySelector("#animais_encontrados_iniciais");
 	var newHtml = '<div class="col-12">'; //row
 
 	// var inicialPetz = ListarPetz();
@@ -141,8 +134,6 @@ fetch('../../data/petz.txt')
 
 	newHtml += "</div>"; //row
 
-	elem_iniciais.innerHTML = newHtml;
+	elem_encontrados_iniciais.innerHTML = newHtml;
   });
-
-
 
