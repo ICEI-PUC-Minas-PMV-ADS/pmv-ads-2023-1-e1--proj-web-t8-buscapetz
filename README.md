@@ -17,10 +17,8 @@ família, dando-lhes uma oportunidade de encontrar um novo lar
 
 ## Integrantes
 
-* Ana Raia Alves da Silva
+
 * Filipe Lopes Gervasio
-* Ian Ruiz Lopes de Vasconcellos
-* Letícia Maria Sampaio Firmino
 * Maria de Lourdes Monteiro da Silva
 * Raquel Nonato Silva
 
