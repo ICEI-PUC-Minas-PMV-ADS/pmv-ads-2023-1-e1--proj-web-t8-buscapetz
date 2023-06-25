@@ -1,12 +1,49 @@
 //edição do animal
-let usuarioEstaLogado = checkLogedUser();
-console.log(usuarioEstaLogado);
-if (usuarioEstaLogado) {
-	novo_navbar = "          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../../index.html#FAQ\">FAQ</a>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../register/register.html\">Registro</a>              </li>              <li class=\"nav-item dropdown\">                  <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" id=\"navbarDropdown\" role=\"button\"                      data-bs-toggle=\"dropdown\" aria-expanded=\"false\">                      Listas                  </a>                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">                      <li><a class=\"dropdown-item\" href=\"../listas/encontrados.html\">Petz Encontrados</a></li>                      <li><a class=\"dropdown-item\" href=\"../listas/perdidos.html\">Petz Perdidos</a></li>                      <li>                          <hr class=\"dropdown-divider\">                      </li>                      <li><a class=\"dropdown-item\" href=\"../listas/adocao.html\">Adoção</a></li>                  </ul>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../chat/chat.html\">Chat</a>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../MeusPetz/MeusPetz.html\">Meus Petz</a>              </li>          </ul>";
-	novo_navbar += "<a class=\"nav-link active\" href=\"./pages/usuario/usuario.html\" tabindex=\"-1\" aria-disabled=\"true\">" + usuarioLogado['firstname'] + "</a>";
-	document.getElementById('navbarSupportedContent').innerHTML = novo_navbar;
+function carregarDados() {
+	var status = document.getElementById("status");
+	var nomePet = document.getElementById("nomePet");
+	var especie = document.getElementById("especie");
+	var raca = document.getElementById("raca");
+	var porte = document.getElementById("porte");
+	var idade = document.getElementById("idade");
+	var pelo_cor = document.getElementById("pelo_cor");
+	var docil = document.getElementById("docil");
+	var chipado = document.getElementById("chipado");
+	var olhos_cor = document.getElementById("olhos_cor");
+	var castrado = document.getElementById("castrado");
+	var genero = document.getElementById("genero");
+	var observacoes = document.getElementById("observacoes");
+
+	var params = new URLSearchParams(window.location.search);
+	var nomeDoPetSelecionado = params.get('petSelecionadoPeloUsuario');
+	var dadosDoPet = RecuperarPetz(nomeDoPetSelecionado);
+
+	status.value = dadosDoPet["status"];
+	nomePet.value = dadosDoPet["nomePet"];
+	// especie.value = dadosDoPet["especie"];
+	console.log(especie);
+	console.log(especie.attributes);
+	console.log(especie.attributes.list);
+	raca.value = dadosDoPet["raca"];
+	porte.value = dadosDoPet["porte"];
+	idade.value = dadosDoPet["idade"];
+	pelo_cor.value = dadosDoPet["pelo_cor"];
+	docil.value = dadosDoPet["docil"];
+	chipado.value = dadosDoPet["chipado"];
+	olhos_cor.value = dadosDoPet["olhos_cor"];
+	castrado.value = dadosDoPet["castrado"];
+	genero.value = dadosDoPet["genero"];
+	observacoes.value = dadosDoPet["observacoes"];
 }
 
+// let isUserLoggedIn = checkLogedUser();
+// console.log(isUserLoggedIn);
+// if (isUserLoggedIn) {
+// 	novo_navbar = "          <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../../index.html#FAQ\">FAQ</a>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../register/register.html\">Registro</a>              </li>              <li class=\"nav-item dropdown\">                  <a class=\"nav-link active dropdown-toggle\" aria-current=\"page\" href=\"#\" id=\"navbarDropdown\" role=\"button\"                      data-bs-toggle=\"dropdown\" aria-expanded=\"false\">                      Listas                  </a>                  <ul class=\"dropdown-menu\" aria-labelledby=\"navbarDropdown\">                      <li><a class=\"dropdown-item\" href=\"../listas/encontrados.html\">Petz Encontrados</a></li>                      <li><a class=\"dropdown-item\" href=\"../listas/perdidos.html\">Petz Perdidos</a></li>                      <li>                          <hr class=\"dropdown-divider\">                      </li>                      <li><a class=\"dropdown-item\" href=\"../listas/adocao.html\">Adoção</a></li>                  </ul>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../chat/chat.html\">Chat</a>              </li>              <li class=\"nav-item\">                  <a class=\"nav-link active\" aria-current=\"page\" href=\"../MeusPetz/MeusPetz.html\">Meus Petz</a>              </li>          </ul>";
+// 	novo_navbar += "<a class=\"nav-link active\" href=\"./pages/usuario/usuario.html\" tabindex=\"-1\" aria-disabled=\"true\">" + usuarioLogado['firstname'] + "</a>";
+// 	document.getElementById('navbarSupportedContent').innerHTML = novo_navbar;
+	carregarDados();
+// }
 
 function updateRacas() {
 	const especieInput = document.getElementById("especie");

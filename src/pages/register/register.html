@@ -323,7 +323,7 @@
     <section class="my-5"></section>
 
     <div class="col-20 text-center">
-      <button class="btn btn-primary" onclick="cadastroPetUsuario()">
+      <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalLoadding" onclick="cadastroPetUsuario()">
         Enviar
       </button>
     </div>
@@ -370,6 +370,16 @@
       </footer>
     </section>
     <!--Fim rodapé-->
+
+    <!-- Loader -->
+    <div class="modal fade py-5" id="modalLoadding" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div id="" class="modal-dialog modal-sm py-5 text-center">
+        <div class="spinner-border text-light" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <!-- /Loader -->
 
     <script src="https://kit.fontawesome.com/1de34e455e.js" crossorigin="anonymous"></script>
     <!-- Optional JavaScript; choose one of the two! -->
@@ -421,35 +431,37 @@
           },
           false
         );
-
+        localStorage.removeItem("image");
         if (imgPath) {
           reader.readAsDataURL(imgPath);
         }
 
         // console.log(localStorage.getItem('image'));
 
-        cadastrado = AdicionarPetz(
-          {
-            status: status.value,
-            nomePet: nomePet.value,
-            especie: especie.value,
-            raca: raca.value,
-            porte: porte.value,
-            idade: idade.value,
-            pelo_cor: pelo_cor.value,
-            docil: docil.value,
-            chipado: chipado.value,
-            olhos_cor: olhos_cor.value,
-            castrado: castrado.value,
-            genero: genero.value,
-            observacoes: observacoes.value,
-            imgPath: localStorage.getItem("image"),
-          },
-          usuarioLogado
-        );
-        if (cadastrado) {
-          window.location.replace("../MeusPetz/MeusPetz.html");
-        }
+        setTimeout(() => {  console.log("World!"); 
+          cadastrado = AdicionarPetz(
+            {
+              status: status.value,
+              nomePet: nomePet.value,
+              especie: especie.value,
+              raca: raca.value,
+              porte: porte.value,
+              idade: idade.value,
+              pelo_cor: pelo_cor.value,
+              docil: docil.value,
+              chipado: chipado.value,
+              olhos_cor: olhos_cor.value,
+              castrado: castrado.value,
+              genero: genero.value,
+              observacoes: observacoes.value,
+              imgPath: localStorage.getItem("image"),
+            },
+            usuarioLogado
+          );
+          if (cadastrado) {
+            window.location.replace("../MeusPetz/MeusPetz.html");
+          }
+        }, 5000);
 
         //Redirect
       }
