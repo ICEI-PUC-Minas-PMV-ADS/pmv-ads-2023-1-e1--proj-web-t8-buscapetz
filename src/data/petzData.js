@@ -71,7 +71,7 @@ function AdicionarPetz(petz, usuario){
 function RecuperarPetz(PetzInfo){
   for (var i = tbPetz.length - 1; i >= 0; i--) {
     var Petz = JSON.parse(tbPetz[i]);
-    console.log(Petz);
+    // console.log(Petz);
     if (Petz.user_name == PetzInfo) {
       console.log("Petz encontrado");
       return Petz;
@@ -80,8 +80,8 @@ function RecuperarPetz(PetzInfo){
       console.log("Petz encontrado");
       return Petz;
     }
-    return false;
   }
+    return false;
 }
 
 function ListarPetz(PetzInfo){
