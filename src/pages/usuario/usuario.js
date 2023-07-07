@@ -25,3 +25,10 @@ if (usuarioLogado) {
 			break;
 	}
 }
+
+//Mascaras
+const $inputTel = document.querySelector('[mascara="tel"]');
+$inputTel.addEventListener('input', telMaskHandleInput, false);
+
+const $inputEmail = document.querySelector('[mascara="email"]');
+$inputEmail.addEventListener('input', emailMaskHandleInput, false);
