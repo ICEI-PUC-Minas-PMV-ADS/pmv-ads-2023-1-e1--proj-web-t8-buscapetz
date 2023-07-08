@@ -13,18 +13,29 @@ function maskTel (phone) {
 
 //Email
 function emailMaskHandleInput (e) {
-  e.target.value = maskemail(e.target.value)
+  console.log(e.target);
+  console.log(e.target.value);
+  maskemail(e.target)
 }
 
 function maskemail (email) {
-  if (validateEmail(email)) {
-    response.innerHTML = 'Hiya Cowboy, this email will work for us 🤠';
+  if (validateEmailFormat(email.value)) {
+  	console.log(email.classList);
+  	// email.class = 'danger';
+  	email.classList.remove("border-danger");
+  	email.classList.add("border","border-success");
+  	console.log(email.classList);
   } else {
-    response.innerHTML = 'Sorry, this email is not cool enough 😩';
+  	email.classList.remove("border-success");
+  	email.classList.add("border","border-danger");
+  	email.setAttribute('data-bs-toggle','tooltip');
+  	email.setAttribute('data-bs-placement','bottom');
+	email.setAttribute('data-bs-title','Formato invalido');
   }
 }
 
 function validateEmailFormat(email) {
   const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  console.log(re.test(String(email).toLowerCase()));
   return re.test(String(email).toLowerCase());
 }
