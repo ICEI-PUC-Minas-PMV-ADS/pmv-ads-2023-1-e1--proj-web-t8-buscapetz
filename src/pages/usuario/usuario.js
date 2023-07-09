@@ -32,3 +32,9 @@ $inputTel.addEventListener('input', telMaskHandleInput, false);
 
 const $inputEmail = document.querySelector('[mascara="email"]');
 $inputEmail.addEventListener('input', emailMaskHandleInput, false);
+
+const $inputsomentenumeros = document.querySelector('[mascara="somentenumeros"]');
+$inputsomentenumeros.addEventListener('input', numberMaskHandleInput, false);
+
+const $inputcep = document.querySelector('[mascara="cep"]');
+$inputcep.addEventListener('input', CEPMaskHandleInput, false);
