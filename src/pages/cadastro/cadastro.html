@@ -49,12 +49,12 @@
                     </div>
                     <div class="input-box">
                         <label for="email">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="Ex: pedro.alves@gmail.com" required>
+                        <input id="email" type="email" mascara="email" name="email" placeholder="Ex: pedro.alves@gmail.com" required>
                     </div>
 
                     <div class="input-box">
                         <label for="number">Celular</label>
-                        <input id="tel" type="tel" name="number" placeholder="Ex: (00) 99999-9999" required>
+                        <input id="tel" type="tel" mascara="tel" name="number" placeholder="Ex: (00) 99999-9999" required>
                     </div>
 
                     <div class="input-box">
@@ -64,7 +64,7 @@
 
                     <div class="input-box">
                         <label for="number">Número</label>
-                        <input id="number" type="text" name="number" placeholder="Ex: 45" required>                        
+                        <input id="number" type="text" mascara="somentenumeros" name="number" placeholder="Ex: 45" required>                        
                     </div>
 
                     <div class="input-box">
@@ -79,17 +79,17 @@
                     
                     <div class="input-box">
                         <label for="text">CEP</label>
-                        <input id="CEP" type="text" name="CEP" placeholder="Ex: 55600-000" required>                                        
+                        <input id="CEP" type="text" mascara="cep" name="CEP" placeholder="Ex: 55600-000" required>                                        
                     </div>
 
                     <div class="input-box">
                         <label for="password">Senha</label>
-                        <input id="password" type="password" name="password" placeholder="********" required>
+                        <input id="password" type="password" validate="matchPass" name="password" placeholder="********" required>
                     </div>
 
                     <div class="input-box">
                         <label for="confirmPassword">Confirme sua Senha</label>
-                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="********" required>
+                        <input id="confirmPassword" type="password" validate="matchConfPass" name="confirmPassword" placeholder="********" required>
                     </div>
                     
 
@@ -166,6 +166,8 @@
 
     <script type="text/javascript" src="../../data/userData.js"></script>
     <script type="text/javascript" src="../../data/footer.js"></script>
+    <script type="text/javascript" src="../../assets/mascaras.js"></script>
+    <script type="text/javascript" src="cadastro.js"></script>
     <script type="text/javascript">
         // var usuario = getCookie("user");
         function cadastroUsuario() {
@@ -190,6 +192,27 @@
             }
             return false;
         }
+
+
+        const $inputCadTel = document.querySelector('[mascara="tel"]');
+        console.log($inputCadTel);
+        console.log(document.querySelector('[mascara="tel"]'));
+        $inputCadTel.addEventListener('input', telMaskHandleInput, false);
+
+        const $inputCadEmail = document.querySelector('[mascara="email"]');
+        $inputCadEmail.addEventListener('input', emailMaskHandleInput, false);
+
+        const $inputCadsomentenumeros = document.querySelector('[mascara="somentenumeros"]');
+        $inputCadsomentenumeros.addEventListener('input', numberMaskHandleInput, false);
+
+        const $inputCadcep = document.querySelector('[mascara="cep"]');
+        $inputCadcep.addEventListener('input', CEPMaskHandleInput, false);
+
+        const $inputCadpass = document.querySelector('[validate="matchPass"]');
+        $inputCadpass.addEventListener('input', passValidateHandleInput, false);
+        const $inputCadconfpass = document.querySelector('[validate="matchConfPass"]');
+        $inputCadconfpass.addEventListener('input', passValidateHandleInput, false);
+
     </script>
 </body>
 
