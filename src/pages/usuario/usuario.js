@@ -38,3 +38,8 @@ $inputsomentenumeros.addEventListener('input', numberMaskHandleInput, false);
 
 const $inputcep = document.querySelector('[mascara="cep"]');
 $inputcep.addEventListener('input', CEPMaskHandleInput, false);
+
+const $inputpass = document.querySelector('[validate="matchPass"]');
+$inputpass.addEventListener('input', passValidateHandleInput, false);
+const $inputconfpass = document.querySelector('[validate="matchConfPass"]');
+$inputconfpass.addEventListener('input', passValidateHandleInput, false);

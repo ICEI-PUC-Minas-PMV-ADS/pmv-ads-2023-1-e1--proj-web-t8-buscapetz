@@ -39,7 +39,7 @@ function validateEmailFormat(email) {
 }
 
 //numeros
-function numberMaskHandleInput (e) {0
+function numberMaskHandleInput (e) {
 	e.target.value = e.target.value.replace(/[^0-9]/g,'');
 }
 
@@ -54,4 +54,28 @@ function maskCEP (cep) {
     // .replace(/^(\(\d{2})(\d)/, '$1) $2')
     .replace(/(\d{5})(\d{1,5})/, '$1-$2')
     .replace(/(-\d{5})\d+?$/, '$1');
+}
+
+//password
+function passValidateHandleInput (e) {
+	console.log(e.target.value);
+	console.log(document.getElementById("password").value);
+	console.log(document.getElementById("confirmPassword").value);
+	if( e.target.value != document.getElementById("confirmPassword").value || e.target.value != document.getElementById("password").value ){
+	  	document.getElementById("password").classList.remove("border-success");
+	  	document.getElementById("confirmPassword").classList.remove("border-success");
+	  	document.getElementById("password").classList.add("border","border-danger");
+	  	document.getElementById("confirmPassword").classList.add("border","border-danger");
+	  	document.getElementById("password").setAttribute('data-bs-toggle','tooltip');
+	  	document.getElementById("confirmPassword").setAttribute('data-bs-toggle','tooltip');
+	  	document.getElementById("password").setAttribute('data-bs-placement','bottom');
+	  	document.getElementById("confirmPassword").setAttribute('data-bs-placement','bottom');
+		document.getElementById("password").setAttribute('data-bs-title','Os campos de senha devem ser iguais');
+		document.getElementById("confirmPassword").setAttribute('data-bs-title','Os campos de senha devem ser iguais');
+	} else {
+		document.getElementById("password").classList.remove("border-danger");
+		document.getElementById("confirmPassword").classList.remove("border-danger");
+	  	document.getElementById("password").classList.add("border","border-success");
+	  	document.getElementById("confirmPassword").classList.add("border","border-success");
+	}
 }
